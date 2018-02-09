@@ -1,0 +1,131 @@
+digraph G{
+fontname = "Bitstream Vera Sans"
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+node [
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+shape = "record"
+]
+edge [
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+]
+RequestXXX[label="{RequestXXX|+  val$runner : Request$1\l|+  init() : void\l+  getRunner() : Runner\l}"]
+ErrorReportingRunnerTestXXX[label="{ErrorReportingRunnerTestXXX||+  init() : void\l+  staticBeforeMethod() : void\l+  staticAfterMethod() : void\l+  testMethodReturningString() : String\l}"]
+FrameworkField[label="{FrameworkField|+  field : FrameworkField\l|+  init() : void\l+  getName() : String\l+  getAnnotations() : Annotation\l+  getAnnotation() : Annotation\l+  isShadowedBy() : Z\l+  handlePossibleBridgeMethod() : FrameworkMember\l+  isBridgeMethod() : Z\l+  getModifiers() : I\l+  getField() : Field\l+  getType() : Class\l+  getDeclaringClass() : Class\l+  get() : Object\l+  toString() : String\l}"]
+ClassRequest[label="{ClassRequest|+  runnerLock : ClassRequest\l+  fTestClass : ClassRequest\l+  canUseSuiteMethod : ClassRequest\l+  runner : ClassRequest\l|+  init() : void\l+  getRunner() : Runner\l+  access200() : Class\l+  access300() : Z\l}"]
+AnnotationValidatorFactoryTestXXX[label="{AnnotationValidatorFactoryTestXXX|+  NO_VALIDATION_ERRORS : AnnotationValidator\l|+  init() : void\l}"]
+TestClass[label="{TestClass|+  klass : TestClass\l|+  init() : void\l+  getTestMethods() : List\l+  getBefores() : List\l+  getAfters() : List\l+  getAnnotatedMethods() : List\l+  runsTopToBottom() : Z\l+  isShadowed() : Z\l+  getSuperClasses() : List\l+  getConstructor() : Constructor\l+  getJavaClass() : Class\l+  getName() : String\l}"]
+IMoney[label="{IMoney||+  add() : IMoney\l+  addMoney() : IMoney\l+  addMoneyBag() : IMoney\l+  isZero() : Z\l+  multiply() : IMoney\l+  negate() : IMoney\l+  subtract() : IMoney\l+  appendTo() : void\l}"]
+RunNotifier[label="{RunNotifier|+  listeners : RunNotifier\l+  pleaseStop : RunNotifier\l|+  init() : void\l+  addListener() : void\l+  removeListener() : void\l+  wrapIfNotThreadSafe() : RunListener\l+  fireTestRunStarted() : void\l+  fireTestRunFinished() : void\l+  fireTestSuiteStarted() : void\l+  fireTestSuiteFinished() : void\l+  fireTestStarted() : void\l+  fireTestFailure() : void\l+  fireTestFailures() : void\l+  fireTestAssumptionFailed() : void\l+  fireTestIgnored() : void\l+  fireTestFinished() : void\l+  pleaseStop() : RunNotifier\l+  addFirstListener() : void\l+  access000() : List\l+  access100() : void\l}"]
+AnnotatedDescriptionTestXXX[label="{AnnotatedDescriptionTestXXX||+  init() : void\l+  a() : void\l}"]
+AnnotationsValidator[label="{AnnotationsValidator|+  VALIDATORS : AnnotationsValidator\l|+  init() : void\l+  validateTestClass() : List\l+  clinit() : void\l}"]
+Super[label="{Super||+  init() : void\l+  a() : void\l}"]
+RealSystem[label="{RealSystem||+  init() : void\l+  exit() : void\l+  out() : PrintStream\l}"]
+ComparisonFailure[label="{ComparisonFailure|+  fExpected : ComparisonFailure\l+  fActual : ComparisonFailure\l+  backtrace : Throwable\l+  detailMessage : Throwable\l+  cause : Throwable\l+  stackTrace : Throwable\l+  suppressedExceptions : Throwable\l+  MAX_CONTEXT_LENGTH : ComparisonFailure\l+  serialVersionUID : Throwable\l+  UNASSIGNED_STACK : Throwable\l+  SUPPRESSED_SENTINEL : Throwable\l+  NULL_CAUSE_MESSAGE : Throwable\l+  SELF_SUPPRESSION_MESSAGE : Throwable\l+  CAUSE_CAPTION : Throwable\l+  SUPPRESSED_CAPTION : Throwable\l+  EMPTY_THROWABLE_ARRAY : Throwable\l+  $assertionsDisabled : Throwable\l|+  init() : void\l+  getMessage() : String\l+  getActual() : String\l+  getExpected() : String\l}"]
+Throwables[label="{Throwables|+  getSuppressed : Throwables\l+  TEST_FRAMEWORK_METHOD_NAME_PREFIXES : Throwables\l+  TEST_FRAMEWORK_TEST_METHOD_NAME_PREFIXES : Throwables\l+  REFLECTION_METHOD_NAME_PREFIXES : Throwables\l|+  init() : void\l+  rethrowAsException() : Exception\l+  rethrow() : void\l+  getStacktrace() : String\l+  getTrimmedStackTrace() : String\l+  getTrimmedStackTraceLines() : List\l+  initGetSuppressed() : Method\l+  hasSuppressed() : Z\l+  getCauseStackTraceLines() : List\l+  getFullStackTrace() : String\l+  appendStackTraceLines() : void\l+  asReversedList() : List\l+  isTestFrameworkMethod() : Z\l+  isReflectionMethod() : Z\l+  isMatchingMethod() : Z\l+  access100() : Z\l+  access200() : Z\l+  clinit() : void\l}"]
+TemporaryFolderXXX[label="{TemporaryFolderXXX|+  parentFolder : TemporaryFolder$Builder\l+  assureDeletion : TemporaryFolder$Builder\l|+  init() : void\l+  parentFolder() : TemporaryFolder$Builder\l+  assureDeletion() : TemporaryFolder$Builder\l+  build() : TemporaryFolder\l+  access000() : File\l+  access100() : Z\l}"]
+PublicClassValidator[label="{PublicClassValidator|+  NO_VALIDATION_ERRORS : PublicClassValidator\l|+  init() : void\l+  validateTestClass() : List\l+  clinit() : void\l}"]
+MaxCoreXXX[label="{MaxCoreXXX|+  val$runners : MaxCore$1\l+  this$0 : MaxCore$1\l|+  init() : void\l+  getRunner() : Runner\l}"]
+CategoryValidator[label="{CategoryValidator|+  INCOMPATIBLE_ANNOTATIONS : CategoryValidator\l+  NO_VALIDATION_ERRORS : AnnotationValidator\l|+  init() : void\l+  validateAnnotatedMethod() : List\l+  addErrorMessage() : void\l+  clinit() : void\l}"]
+SortingRequest[label="{SortingRequest|+  request : SortingRequest\l+  comparator : SortingRequest\l|+  init() : void\l+  getRunner() : Runner\l}"]
+InitializationError[label="{InitializationError|+  fErrors : InitializationError\l+  backtrace : Throwable\l+  detailMessage : Throwable\l+  cause : Throwable\l+  stackTrace : Throwable\l+  suppressedExceptions : Throwable\l+  serialVersionUID : Throwable\l+  UNASSIGNED_STACK : Throwable\l+  SUPPRESSED_SENTINEL : Throwable\l+  NULL_CAUSE_MESSAGE : Throwable\l+  SELF_SUPPRESSION_MESSAGE : Throwable\l+  CAUSE_CAPTION : Throwable\l+  SUPPRESSED_CAPTION : Throwable\l+  EMPTY_THROWABLE_ARRAY : Throwable\l+  $assertionsDisabled : Throwable\l|+  init() : void\l+  getCauses() : List\l}"]
+FrameworkMember[label="{FrameworkMember||+  init() : void\l+  isShadowedBy() : Z\l+  handlePossibleBridgeMethod() : FrameworkMember\l+  isBridgeMethod() : Z\l+  getModifiers() : I\l+  isStatic() : Z\l+  isPublic() : Z\l+  getName() : String\l+  getType() : Class\l+  getDeclaringClass() : Class\l}"]
+TemporaryFolderRuleAssuredDeletionTest[label="{TemporaryFolderRuleAssuredDeletionTest|+  parentFolder : TemporaryFolder$Builder\l+  assureDeletion : TemporaryFolder$Builder\l|+  init() : void\l+  build() : TemporaryFolder\l}"]
+ParallelComputer[label="{ParallelComputer|+  classes : ParallelComputer\l+  methods : ParallelComputer\l|+  init() : void\l+  classes() : ParallelComputer\l+  methods() : ParallelComputer\l+  parallelize() : Runner\l+  getSuite() : Runner\l+  getRunner() : Runner\l}"]
+AnnotationValidator[label="{AnnotationValidator|+  NO_VALIDATION_ERRORS : AnnotationValidator\l|+  init() : void\l+  validateAnnotatedClass() : List\l+  validateAnnotatedField() : List\l+  validateAnnotatedMethod() : List\l+  clinit() : void\l}"]
+ReflectiveRuntimeMXBean[label="{ReflectiveRuntimeMXBean|+  runtimeMxBean : ReflectiveRuntimeMXBean\l|+  init() : void\l+  getInputArguments() : List\l}"]
+TestSystem[label="{TestSystem|+  out : TestSystem\l+  fCode : TestSystem\l+  fOutContents : TestSystem\l|+  init() : void\l+  exit() : void\l+  out() : TestSystem\l+  outContents() : OutputStream\l}"]
+FakeRuntimeMXBean[label="{FakeRuntimeMXBean||+  init() : void\l+  getInputArguments() : List\l}"]
+AnnotationsValidatorTestXXX[label="{AnnotationsValidatorTestXXX|+  ANNOTATED_METHOD_CALLED : AnnotationsValidatorTest$ExampleAnnotationValidator\l+  ANNOTATED_FIELD_CALLED : AnnotationsValidatorTest$ExampleAnnotationValidator\l+  ANNOTATED_CLASS_CALLED : AnnotationsValidatorTest$ExampleAnnotationValidator\l+  NO_VALIDATION_ERRORS : AnnotationValidator\l|+  init() : void\l+  validateAnnotatedClass() : List\l+  validateAnnotatedField() : List\l+  validateAnnotatedMethod() : List\l}"]
+Result[label="{Result|+  count : Result\l+  ignoreCount : Result\l+  failures : Result\l+  runTime : Result\l+  startTime : Result\l+  serializedForm : Result\l+  serialVersionUID : Result\l+  serialPersistentFields : Result\l|+  init() : void\l+  getRunCount() : I\l+  getFailureCount() : I\l+  getRunTime() : J\l+  getFailures() : List\l+  getIgnoreCount() : I\l+  wasSuccessful() : Z\l+  writeObject() : void\l+  readObject() : void\l+  readResolve() : Object\l+  createListener() : RunListener\l+  access500() : AtomicLong\l+  access600() : AtomicLong\l+  access700() : AtomicInteger\l+  access800() : CopyOnWriteArrayList\l+  access900() : AtomicInteger\l+  clinit() : void\l}"]
+ResultTestXXX[label="{ResultTestXXX|+  delegate : ResultTest$ResultWithFixedRunTime\l+  count : Result\l+  ignoreCount : Result\l+  failures : Result\l+  runTime : Result\l+  startTime : Result\l+  serializedForm : Result\l+  serialVersionUID : Result\l+  serialPersistentFields : Result\l|+  init() : void\l+  getRunCount() : I\l+  getFailureCount() : I\l+  getRunTime() : J\l+  getFailures() : List\l+  getIgnoreCount() : I\l}"]
+TestClassValidator[label="{TestClassValidator||+  validateTestClass() : List\l}"]
+ComparisonCriteria[label="{ComparisonCriteria|+  END_OF_ARRAY_SENTINEL : ComparisonCriteria\l|+  init() : void\l+  arrayEquals() : void\l+  getToStringableArrayElement() : Object\l+  objectWithToString() : Object\l+  componentTypeName() : String\l+  isArray() : Z\l+  assertElementsEqual() : void\l+  clinit() : void\l}"]
+ExactComparisonCriteria[label="{ExactComparisonCriteria|+  END_OF_ARRAY_SENTINEL : ComparisonCriteria\l|+  init() : void\l+  assertElementsEqual() : void\l}"]
+Annotatable[label="{Annotatable||+  getAnnotations() : Annotation\l+  getAnnotation() : Annotation\l}"]
+MoneyBag[label="{MoneyBag|+  fMonies : MoneyBag\l|+  init() : void\l+  create() : IMoney\l+  add() : IMoney\l+  addMoney() : IMoney\l+  addMoneyBag() : IMoney\l+  appendBag() : void\l+  appendMoney() : void\l+  equals() : Z\l+  findMoney() : Money\l+  contains() : Z\l+  hashCode() : I\l+  isZero() : Z\l+  multiply() : IMoney\l+  negate() : IMoney\l+  simplify() : IMoney\l+  subtract() : IMoney\l+  toString() : String\l+  appendTo() : void\l}"]
+RuntimeMXBean[label="{RuntimeMXBean||+  getInputArguments() : List\l}"]
+JUnitSystem[label="{JUnitSystem||+  exit() : void\l+  out() : PrintStream\l}"]
+Money[label="{Money|+  fAmount : Money\l+  fCurrency : Money\l|+  init() : void\l+  add() : IMoney\l+  addMoney() : IMoney\l+  addMoneyBag() : IMoney\l+  amount() : I\l+  currency() : String\l+  equals() : Z\l+  hashCode() : I\l+  isZero() : Z\l+  multiply() : IMoney\l+  negate() : IMoney\l+  subtract() : IMoney\l+  toString() : String\l+  appendTo() : void\l}"]
+AssertionFailedError[label="{AssertionFailedError|+  backtrace : Throwable\l+  detailMessage : Throwable\l+  cause : Throwable\l+  stackTrace : Throwable\l+  suppressedExceptions : Throwable\l+  serialVersionUID : Throwable\l+  UNASSIGNED_STACK : Throwable\l+  SUPPRESSED_SENTINEL : Throwable\l+  NULL_CAUSE_MESSAGE : Throwable\l+  SELF_SUPPRESSION_MESSAGE : Throwable\l+  CAUSE_CAPTION : Throwable\l+  SUPPRESSED_CAPTION : Throwable\l+  EMPTY_THROWABLE_ARRAY : Throwable\l+  $assertionsDisabled : Throwable\l|+  init() : void\l+  defaultString() : String\l}"]
+Computer[label="{Computer||+  init() : void\l+  serial() : Computer\l+  getSuite() : Runner\l+  getRunner() : Runner\l}"]
+InexactComparisonCriteria[label="{InexactComparisonCriteria|+  fDelta : InexactComparisonCriteria\l+  END_OF_ARRAY_SENTINEL : ComparisonCriteria\l|+  init() : void\l+  assertElementsEqual() : void\l}"]
+Ignore[label="{Ignore||+  value() : String\l}"]
+Request[label="{Request||+  init() : void\l+  method() : Request\l+  aClass() : Request\l+  classWithoutSuiteMethod() : Request\l+  classes() : Request\l+  errorReport() : Request\l+  runner() : Request\l+  getRunner() : Runner\l+  filterWith() : Request\l+  sortWith() : Request\l}"]
+FilterRequest[label="{FilterRequest|+  request : FilterRequest\l+  fFilter : FilterRequest\l|+  init() : void\l+  getRunner() : Runner\l}"]
+InvalidTestClassError[label="{InvalidTestClassError|+  message : InvalidTestClassError\l+  fErrors : InitializationError\l+  backtrace : Throwable\l+  detailMessage : Throwable\l+  cause : Throwable\l+  stackTrace : Throwable\l+  suppressedExceptions : Throwable\l+  serialVersionUID : Throwable\l+  UNASSIGNED_STACK : Throwable\l+  SUPPRESSED_SENTINEL : Throwable\l+  NULL_CAUSE_MESSAGE : Throwable\l+  SELF_SUPPRESSION_MESSAGE : Throwable\l+  CAUSE_CAPTION : Throwable\l+  SUPPRESSED_CAPTION : Throwable\l+  EMPTY_THROWABLE_ARRAY : Throwable\l+  $assertionsDisabled : Throwable\l|+  init() : void\l+  createMessage() : String\l+  getMessage() : String\l}"]
+ThrowablesXXX[label="{ThrowablesXXX|+  val$list : Throwables$1\l+  modCount : AbstractList\l+  MAX_ARRAY_SIZE : AbstractCollection\l|+  init() : void\l+  get() : Object\l+  size() : I\l}"]
+ReflectiveThreadMXBean[label="{ReflectiveThreadMXBean|+  threadMxBean : ReflectiveThreadMXBean\l|+  init() : void\l+  getThreadCpuTime() : J\l+  isThreadCpuTimeSupported() : Z\l}"]
+FrameworkMethod[label="{FrameworkMethod|+  method : FrameworkMethod\l|+  init() : void\l+  getMethod() : Method\l+  invokeExplosively() : Object\l+  getName() : String\l+  validatePublicVoidNoArg() : void\l+  validatePublicVoid() : void\l+  getModifiers() : I\l+  getReturnType() : Class\l+  getType() : Class\l+  getDeclaringClass() : Class\l+  validateNoTypeParametersOnArgs() : void\l+  handlePossibleBridgeMethod() : FrameworkMember\l+  isShadowedBy() : Z\l+  isBridgeMethod() : Z\l+  equals() : Z\l+  hashCode() : I\l+  producesType() : Z\l+  getParameterTypes() : Class\l+  getAnnotations() : Annotation\l+  getAnnotation() : Annotation\l+  toString() : String\l+  access000() : Method\l}"]
+ThreadMXBean[label="{ThreadMXBean||+  getThreadCpuTime() : J\l+  isThreadCpuTimeSupported() : Z\l}"]
+Sub[label="{Sub||+  init() : void\l+  a() : void\l}"]
+FakeThreadMXBean[label="{FakeThreadMXBean||+  init() : void\l+  getThreadCpuTime() : J\l+  isThreadCpuTimeSupported() : Z\l}"]
+edge [arrowhead = "empty"]
+RequestXXX->Request
+ErrorReportingRunnerTestXXX->RunNotifier
+FrameworkField->FrameworkMember
+ClassRequest->Request
+AnnotationValidatorFactoryTestXXX->AnnotationValidator
+TestClass->Annotatable
+AnnotatedDescriptionTestXXX->Ignore
+AnnotationsValidator->TestClassValidator
+RealSystem->JUnitSystem
+ComparisonFailure->AssertionFailedError
+Throwables->ThrowablesXXX
+PublicClassValidator->TestClassValidator
+MaxCoreXXX->Request
+CategoryValidator->AnnotationValidator
+SortingRequest->Request
+FrameworkMember->Annotatable
+TemporaryFolderRuleAssuredDeletionTest->TemporaryFolderXXX
+ParallelComputer->Computer
+ReflectiveRuntimeMXBean->RuntimeMXBean
+TestSystem->JUnitSystem
+FakeRuntimeMXBean->RuntimeMXBean
+AnnotationsValidatorTestXXX->AnnotationValidator
+ResultTestXXX->Result
+ExactComparisonCriteria->ComparisonCriteria
+MoneyBag->IMoney
+Money->IMoney
+InexactComparisonCriteria->ComparisonCriteria
+FilterRequest->Request
+InvalidTestClassError->InitializationError
+ReflectiveThreadMXBean->ThreadMXBean
+FrameworkMethod->FrameworkMember
+Sub->Super
+FakeThreadMXBean->ThreadMXBean
+edge [arrowhead = "normal"]
+FrameworkField->FrameworkField
+ClassRequest->ClassRequest
+AnnotationValidatorFactoryTestXXX->AnnotationValidator
+TestClass->TestClass
+RunNotifier->RunNotifier
+AnnotationsValidator->AnnotationsValidator
+ComparisonFailure->ComparisonFailure
+Throwables->Throwables
+PublicClassValidator->PublicClassValidator
+CategoryValidator->CategoryValidator
+CategoryValidator->AnnotationValidator
+SortingRequest->SortingRequest
+InitializationError->InitializationError
+ParallelComputer->ParallelComputer
+AnnotationValidator->AnnotationValidator
+ReflectiveRuntimeMXBean->ReflectiveRuntimeMXBean
+TestSystem->TestSystem
+AnnotationsValidatorTestXXX->AnnotationValidator
+Result->Result
+ResultTestXXX->Result
+ComparisonCriteria->ComparisonCriteria
+ExactComparisonCriteria->ComparisonCriteria
+MoneyBag->MoneyBag
+Money->Money
+InexactComparisonCriteria->InexactComparisonCriteria
+InexactComparisonCriteria->ComparisonCriteria
+FilterRequest->FilterRequest
+InvalidTestClassError->InvalidTestClassError
+InvalidTestClassError->InitializationError
+ReflectiveThreadMXBean->ReflectiveThreadMXBean
+FrameworkMethod->FrameworkMethod
+}

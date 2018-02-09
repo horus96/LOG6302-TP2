@@ -1,0 +1,154 @@
+digraph G{
+fontname = "Bitstream Vera Sans"
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+node [
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+shape = "record"
+]
+edge [
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+]
+AllTestsTestXXX[label="{AllTestsTestXXX||+  init() : void\l+  suite() : Test\l}"]
+TextRunnerSingleMethodTestXXX[label="{TextRunnerSingleMethodTestXXX|+  fName : TestCase\l|+  init() : void\l+  testWasInvoked() : void\l+  testNotInvoked() : void\l}"]
+ForwardCompatibilityPrintingTest[label="{ForwardCompatibilityPrintingTest|+  fName : TestCase\l|+  init() : void\l+  testError() : void\l+  testErrorAdapted() : void\l+  expected() : String\l}"]
+SimpleTest[label="{SimpleTest|+  fValue1 : SimpleTest\l+  fValue2 : SimpleTest\l+  unused : SimpleTest\l+  fName : TestCase\l|+  init() : void\l+  setUp() : void\l+  suite() : Test\l+  testAdd() : void\l+  testDivideByZero() : void\l+  testEquals() : void\l+  main() : void\l}"]
+JUnit4TestAdapterTestXXX[label="{JUnit4TestAdapterTestXXX||+  init() : void\l+  pass() : void\l}"]
+AnnotationTestXXX[label="{AnnotationTestXXX||+  init() : void\l+  error() : void\l}"]
+SuiteMethodTestXXX[label="{SuiteMethodTestXXX|+  fName : TestCase\l|+  init() : void\l+  suite() : Test\l+  notObviouslyATest() : void\l}"]
+TestCaseTestXXX[label="{TestCaseTestXXX|+  this$0 : TestCaseTest$2\l+  fTornDown : TestCaseTest$TornDown\l+  fName : TestCase\l|+  init() : void\l+  tearDown() : void\l+  runTest() : void\l}"]
+ComparisonFailureTest[label="{ComparisonFailureTest|+  fName : TestCase\l|+  init() : void\l+  testConnection() : void\l+  testThrowing() : void\l+  testExceptionToStringWithMessage() : void\l+  testExceptionToStringWithoutMessage() : void\l}"]
+JUnit38SortingTestXXX[label="{JUnit38SortingTestXXX||+  init() : void\l+  pass() : void\l}"]
+ListTest[label="{ListTest|+  fEmpty : ListTest\l+  fFull : ListTest\l+  fgHeavy : ListTest\l|+  init() : void\l+  main() : void\l+  setUpOnce() : void\l+  setUp() : void\l+  suite() : Test\l+  capacity() : void\l+  testCopy() : void\l+  contains() : void\l+  elementAt() : void\l+  removeAll() : void\l+  removeElement() : void\l}"]
+ThreeTestCases[label="{ThreeTestCases|+  fName : TestCase\l|+  init() : void\l+  testCase() : void\l+  testCase2() : void\l+  testCase3thisTimeItsPersonal() : void\l}"]
+WasRun[label="{WasRun|+  fWasRun : WasRun\l+  fName : TestCase\l|+  init() : void\l+  runTest() : void\l}"]
+TextListenerTest[label="{TextListenerTest|+  runner : TextListenerTest\l+  results : TextListenerTest\l+  fName : TestCase\l|+  init() : void\l+  setUp() : void\l+  testSuccess() : void\l+  testError() : void\l+  testTime() : void\l+  convert() : String\l}"]
+NotPublicTestCase[label="{NotPublicTestCase|+  fName : TestCase\l|+  init() : void\l+  testNotPublic() : void\l+  testPublic() : void\l}"]
+AssertionFailedErrorTest[label="{AssertionFailedErrorTest|+  fName : TestCase\l+  ARBITRARY_MESSAGE : AssertionFailedErrorTest\l|+  init() : void\l+  testCreateErrorWithoutMessage() : void\l+  testCreateErrorWithMessage() : void\l+  testCreateErrorWithoutMessageInsteadOfNull() : void\l}"]
+BaseTestRunnerTest[label="{BaseTestRunnerTest|+  fName : TestCase\l|+  init() : void\l+  testInvokeNonStaticSuite() : void\l+  testInvokeSuiteOnNonSubclassOfTestCase() : void\l}"]
+TestImplementorTestXXX[label="{TestImplementorTestXXX|+  fTestCase : TestImplementorTest$DoubleTestCase\l|+  init() : void\l+  countTestCases() : I\l+  run() : void\l+  access000() : TestCase\l}"]
+RepeatedTestTestXXX[label="{RepeatedTestTestXXX|+  fName : TestCase\l|+  init() : void\l+  runTest() : void\l}"]
+Success[label="{Success|+  fName : TestCase\l|+  init() : void\l+  runTest() : void\l+  testSuccess() : void\l}"]
+TextFeedbackTest[label="{TextFeedbackTest|+  output : TextFeedbackTest\l+  runner : TextFeedbackTest\l+  fName : TestCase\l|+  init() : void\l+  main() : void\l+  setUp() : void\l+  testEmptySuite() : void\l+  testOneTest() : void\l+  testTwoTests() : void\l+  testFailure() : void\l+  testError() : void\l+  expected() : String\l}"]
+SuiteTest[label="{SuiteTest|+  log : SuiteTest\l|+  init() : void\l+  ensureTestIsRun() : void\l+  ensureInheritedTestIsRun() : void\l+  suiteTestCountIsCorrect() : void\l+  suiteClassDoesNotNeedToBePublic() : void\l+  nonPublicSuiteClassWithBeforeClassPasses() : void\l+  ensureSuitesWorkWithForwardCompatibility() : void\l+  forwardCompatibilityWorksWithGetTests() : void\l+  forwardCompatibilityWorksWithTestCount() : void\l+  beforeAndAfterClassRunOnSuite() : void\l+  withoutSuiteClassAnnotationProducesFailure() : void\l+  whatHappensWhenASuiteHasACycle() : void\l+  whatHappensWhenASuiteHasAForkingCycle() : void\l+  whatHappensWhenASuiteContainsItselfIndirectly() : void\l+  suiteShouldBeOKwithNonDefaultConstructor() : void\l+  suiteShouldComplainAboutNoSuiteClassesAnnotation() : void\l+  access000() : String\l+  access002() : String\l+  clinit() : void\l}"]
+ComparisonCompactorTest[label="{ComparisonCompactorTest|+  fName : TestCase\l|+  init() : void\l+  testMessage() : void\l+  testStartSame() : void\l+  testEndSame() : void\l+  testSame() : void\l+  testNoContextStartAndEndSame() : void\l+  testStartAndEndContext() : void\l+  testStartAndEndContextWithEllipses() : void\l+  testComparisonErrorStartSameComplete() : void\l+  testComparisonErrorEndSameComplete() : void\l+  testComparisonErrorEndSameCompleteContext() : void\l+  testComparisonErrorOverlappingMatches() : void\l+  testComparisonErrorOverlappingMatchesContext() : void\l+  testComparisonErrorOverlappingMatches2() : void\l+  testComparisonErrorOverlappingMatches2Context() : void\l+  testComparisonErrorWithActualNull() : void\l+  testComparisonErrorWithActualNullContext() : void\l+  testComparisonErrorWithExpectedNull() : void\l+  testComparisonErrorWithExpectedNullContext() : void\l+  testBug609972() : void\l}"]
+FloatAssertTest[label="{FloatAssertTest|+  fName : TestCase\l|+  init() : void\l+  testAssertEqualsNaNFails() : void\l+  testAssertNaNEqualsFails() : void\l+  testAssertNaNEqualsNaN() : void\l+  testAssertPosInfinityNotEqualsNegInfinity() : void\l+  testAssertPosInfinityNotEquals() : void\l+  testAssertPosInfinityEqualsInfinity() : void\l+  testAssertNegInfinityEqualsInfinity() : void\l+  testAllInfinities() : void\l}"]
+ExtensionTest[label="{ExtensionTest|+  fName : TestCase\l|+  init() : void\l+  testRunningErrorInTestSetup() : void\l+  testRunningErrorsInTestSetup() : void\l+  testSetupErrorDontTearDown() : void\l+  testSetupErrorInTestSetup() : void\l}"]
+ResultTest[label="{ResultTest|+  fName : TestCase\l|+  init() : void\l+  testRunFailureResultCanBeSerialised() : void\l+  testRunSuccessResultCanBeSerialised() : void\l+  assertResultSerializable() : void\l+  assertSerializedCorrectly() : void\l}"]
+ActiveTestTest[label="{ActiveTestTest|+  fName : TestCase\l|+  init() : void\l+  testActiveTest() : void\l+  testActiveRepeatedTest() : void\l+  testActiveRepeatedTest0() : void\l+  testActiveRepeatedTest1() : void\l+  createActiveTestSuite() : ActiveTestSuite\l}"]
+MoneyTest[label="{MoneyTest|+  f12CHF : MoneyTest\l+  f14CHF : MoneyTest\l+  f7USD : MoneyTest\l+  f21USD : MoneyTest\l+  fMB1 : MoneyTest\l+  fMB2 : MoneyTest\l+  fName : TestCase\l|+  init() : void\l+  main() : void\l+  setUp() : void\l+  testBagMultiply() : void\l+  testBagNegate() : void\l+  testBagSimpleAdd() : void\l+  testBagSubtract() : void\l+  testBagSumAdd() : void\l+  testIsZero() : void\l+  testMixedSimpleAdd() : void\l+  testBagNotEquals() : void\l+  testMoneyBagEquals() : void\l+  testMoneyBagHash() : void\l+  testMoneyEquals() : void\l+  testMoneyHash() : void\l+  testSimplify() : void\l+  testNormalize2() : void\l+  testNormalize3() : void\l+  testNormalize4() : void\l+  testPrint() : void\l+  testSimpleAdd() : void\l+  testSimpleBagAdd() : void\l+  testSimpleMultiply() : void\l+  testSimpleNegate() : void\l+  testSimpleSubtract() : void\l}"]
+DoublePrecisionAssertTest[label="{DoublePrecisionAssertTest|+  fName : TestCase\l|+  init() : void\l+  testAssertEqualsNaNFails() : void\l+  testAssertNaNEqualsFails() : void\l+  testAssertNaNEqualsNaN() : void\l+  testAssertPosInfinityNotEqualsNegInfinity() : void\l+  testAssertPosInfinityNotEquals() : void\l+  testAssertPosInfinityEqualsInfinity() : void\l+  testAssertNegInfinityEqualsInfinity() : void\l}"]
+Failure[label="{Failure|+  fDescription : Failure\l+  fThrownException : Failure\l+  serialVersionUID : Failure\l|+  init() : void\l+  getTestHeader() : String\l+  getDescription() : Description\l+  getException() : Throwable\l+  toString() : String\l+  getTrace() : String\l+  getTrimmedTrace() : String\l+  getMessage() : String\l}"]
+ActiveTestTestXXX[label="{ActiveTestTestXXX|+  fName : TestCase\l|+  init() : void\l+  runTest() : void\l}"]
+ForwardCompatibilityTest[label="{ForwardCompatibilityTest|+  fName : TestCase\l+  fLog : ForwardCompatibilityTest\l+  exception : ForwardCompatibilityTest\l+  log : ForwardCompatibilityTest\l+  wasRun : ForwardCompatibilityTest\l|+  init() : void\l+  testCompatibility() : void\l+  testToString() : void\l+  testUseGlobalCache() : void\l+  testException() : void\l+  testNotifyResult() : void\l+  testNoException() : void\l+  testExpected() : void\l+  testBeforeAndAfterClass() : void\l+  testExceptionInBefore() : void\l+  testInvalidMethod() : void\l+  testRunWithClass() : void\l+  testToStringSuite() : void\l+  access002() : Z\l+  clinit() : void\l}"]
+TextRunnerTest[label="{TextRunnerTest|+  fName : TestCase\l|+  init() : void\l+  testFailure() : void\l+  testSuccess() : void\l+  testError() : void\l+  execTest() : void\l+  testRunReturnsResult() : void\l}"]
+OldTestClassAdaptingListenerTestXXX[label="{OldTestClassAdaptingListenerTestXXX|+  this$0 : OldTestClassAdaptingListenerTest$1\l+  fName : TestCase\l|+  init() : void\l}"]
+NoTestCases[label="{NoTestCases|+  fName : TestCase\l|+  init() : void\l+  noTestCase() : void\l}"]
+TextRunnerSingleMethodTest[label="{TextRunnerSingleMethodTest|+  fName : TestCase\l+  fgWasInvoked : TextRunnerSingleMethodTest\l|+  init() : void\l+  testSingle() : void\l}"]
+AssertTest[label="{AssertTest|+  fName : TestCase\l|+  init() : void\l+  testFail() : void\l+  testAssertionFailedErrorToStringWithNoMessage() : void\l+  testAssertionFailedErrorToStringWithMessage() : void\l+  testAssertEquals() : void\l+  testAssertEqualsNull() : void\l+  testAssertStringEquals() : void\l+  testAssertNullNotEqualsString() : void\l+  testAssertStringNotEqualsNull() : void\l+  testAssertNullNotEqualsNull() : void\l+  testAssertNull() : void\l+  testAssertNotNull() : void\l+  testAssertTrue() : void\l+  testAssertFalse() : void\l+  testAssertSame() : void\l+  testAssertNotSame() : void\l+  testAssertNotSameFailsNull() : void\l}"]
+NotVoidTestCase[label="{NotVoidTestCase|+  fName : TestCase\l|+  init() : void\l+  testNotVoid() : I\l+  testVoid() : void\l}"]
+TestCase[label="{TestCase|+  fName : TestCase\l|+  init() : void\l+  countTestCases() : I\l+  createResult() : TestResult\l+  run() : void\l+  runBare() : void\l+  runTest() : void\l+  assertTrue() : void\l+  assertFalse() : void\l+  fail() : void\l+  assertEquals() : void\l+  assertNotNull() : void\l+  assertNull() : void\l+  assertSame() : void\l+  assertNotSame() : void\l+  failSame() : void\l+  failNotSame() : void\l+  failNotEquals() : void\l+  format() : String\l+  setUp() : void\l+  tearDown() : void\l+  toString() : String\l+  getName() : String\l+  setName() : void\l}"]
+NoArgTestCaseTest[label="{NoArgTestCaseTest|+  fName : TestCase\l|+  init() : void\l+  testNothing() : void\l}"]
+StackFilterTest[label="{StackFilterTest|+  fFiltered : StackFilterTest\l+  fUnfiltered : StackFilterTest\l+  fName : TestCase\l|+  init() : void\l+  setUp() : void\l+  testFilter() : void\l}"]
+TestSuiteXXX[label="{TestSuiteXXX|+  val$message : TestSuite$1\l+  fName : TestCase\l|+  init() : void\l+  runTest() : void\l}"]
+TestCaseTest[label="{TestCaseTest|+  fName : TestCase\l|+  init() : void\l+  testCaseToString() : void\l+  testError() : void\l+  testRunAndTearDownFails() : void\l+  testSetupFails() : void\l+  testSuccess() : void\l+  testFailure() : void\l+  testTearDownAfterError() : void\l+  testTearDownFails() : void\l+  testTearDownSetupFails() : void\l+  testWasRun() : void\l+  testExceptionRunningAndTearDown() : void\l+  testErrorTearingDownDoesntMaskErrorRunning() : void\l+  testNoArgTestCasePasses() : void\l+  testNamelessTestCase() : void\l+  verifyError() : void\l+  verifyFailure() : void\l+  verifySuccess() : void\l}"]
+RepeatedTestTest[label="{RepeatedTestTest|+  fSuite : RepeatedTestTest\l+  fName : TestCase\l|+  init() : void\l+  testRepeatedOnce() : void\l+  testRepeatedMoreThanOnce() : void\l+  testRepeatedZero() : void\l+  testRepeatedNegative() : void\l}"]
+edge [arrowhead = "empty"]
+AllTestsTestXXX->TestCase
+TextRunnerSingleMethodTestXXX->TestCase
+ForwardCompatibilityPrintingTest->TestCase
+SimpleTest->TestCase
+JUnit4TestAdapterTestXXX->TestCase
+AnnotationTestXXX->AnnotationTestXXX
+AnnotationTestXXX->TestCase
+SuiteMethodTestXXX->TestCase
+TestCaseTestXXX->TestCaseTestXXX
+TestCaseTestXXX->TestCase
+ComparisonFailureTest->TestCase
+JUnit38SortingTestXXX->TestCase
+ListTest->TestCase
+ThreeTestCases->TestCase
+WasRun->TestCase
+TextListenerTest->TestCase
+NotPublicTestCase->TestCase
+AssertionFailedErrorTest->TestCase
+BaseTestRunnerTest->TestCase
+TestImplementorTestXXX->TestCase
+RepeatedTestTestXXX->TestCase
+Success->TestCase
+TextFeedbackTest->TestCase
+SuiteTest->TestCase
+ComparisonCompactorTest->TestCase
+FloatAssertTest->TestCase
+ExtensionTest->TestCase
+ResultTest->TestCase
+ActiveTestTest->TestCase
+MoneyTest->TestCase
+DoublePrecisionAssertTest->TestCase
+Failure->TestCase
+ActiveTestTestXXX->TestCase
+ForwardCompatibilityTest->TestCase
+TextRunnerTest->TestCase
+OldTestClassAdaptingListenerTestXXX->TestCase
+NoTestCases->TestCase
+TextRunnerSingleMethodTest->TestCase
+AssertTest->TestCase
+NotVoidTestCase->TestCase
+NoArgTestCaseTest->TestCase
+StackFilterTest->TestCase
+TestSuiteXXX->TestCase
+TestCaseTest->TestCase
+RepeatedTestTest->TestCase
+edge [arrowhead = "normal"]
+TextRunnerSingleMethodTestXXX->TestCase
+ForwardCompatibilityPrintingTest->TestCase
+SimpleTest->SimpleTest
+SimpleTest->TestCase
+SuiteMethodTestXXX->TestCase
+TestCaseTestXXX->TestCase
+ComparisonFailureTest->TestCase
+ListTest->ListTest
+ThreeTestCases->TestCase
+WasRun->WasRun
+WasRun->TestCase
+TextListenerTest->TextListenerTest
+TextListenerTest->TestCase
+NotPublicTestCase->TestCase
+AssertionFailedErrorTest->TestCase
+AssertionFailedErrorTest->AssertionFailedErrorTest
+BaseTestRunnerTest->TestCase
+RepeatedTestTestXXX->TestCase
+Success->TestCase
+TextFeedbackTest->TextFeedbackTest
+TextFeedbackTest->TestCase
+SuiteTest->SuiteTest
+ComparisonCompactorTest->TestCase
+FloatAssertTest->TestCase
+ExtensionTest->TestCase
+ResultTest->TestCase
+ActiveTestTest->TestCase
+MoneyTest->MoneyTest
+MoneyTest->TestCase
+DoublePrecisionAssertTest->TestCase
+Failure->Failure
+ActiveTestTestXXX->TestCase
+ForwardCompatibilityTest->TestCase
+ForwardCompatibilityTest->ForwardCompatibilityTest
+TextRunnerTest->TestCase
+OldTestClassAdaptingListenerTestXXX->TestCase
+NoTestCases->TestCase
+TextRunnerSingleMethodTest->TestCase
+TextRunnerSingleMethodTest->TextRunnerSingleMethodTest
+AssertTest->TestCase
+NotVoidTestCase->TestCase
+TestCase->TestCase
+NoArgTestCaseTest->TestCase
+StackFilterTest->StackFilterTest
+StackFilterTest->TestCase
+TestSuiteXXX->TestCase
+TestCaseTest->TestCase
+RepeatedTestTest->RepeatedTestTest
+RepeatedTestTest->TestCase
+}

@@ -1,0 +1,509 @@
+digraph G{
+fontname = "Bitstream Vera Sans"
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+node [
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+shape = "record"
+]
+edge [
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+]
+AssertionTestXXX[label="{AssertionTestXXX||+  init() : void\l+  run() : void\l}"]
+TestListenerTestXXX[label="{TestListenerTestXXX||+  init() : void\l+  nothing() : void\l}"]
+VerifierRuleTest[label="{VerifierRuleTest|+  this$0 : VerifierRuleTest$UsesErrorCollectorCheckSucceedsPasses$1\l|+  init() : void\l+  call() : Object\l}"]
+Guesser[label="{Guesser|+  guesses : Guesser\l+  type : Guesser\l|+  init() : void\l+  getProxy() : Object\l+  reguesses() : List\l+  getValue() : Object\l+  getType() : Class\l+  getDescription() : String\l+  access000() : Guesser$GuessMap\l}"]
+AnnotatedBuilderTestXXX[label="{AnnotatedBuilderTestXXX|+  invokedRunnerBuilder : RunnerSpy\l+  invokedTestClass : RunnerSpy\l+  DESCRIPTION : RunnerSpy\l|+  init() : void\l}"]
+ExtensionTestXXX[label="{ExtensionTestXXX|+  fTornDown : ExtensionTest$TornDown\l+  fTest : TestDecorator\l|+  init() : void\l+  tearDown() : void\l}"]
+InheritedTestCase[label="{InheritedTestCase|+  fName : TestCase\l|+  init() : void\l+  test2() : void\l}"]
+SortableTest[label="{SortableTest||+  init() : void\l}"]
+BaseTestRunnerTestXXX[label="{BaseTestRunnerTestXXX|+  fRunFailed : BaseTestRunnerTest$MockRunner\l+  fLoading : BaseTestRunner\l+  SUITE_METHODNAME : BaseTestRunner\l+  fPreferences : BaseTestRunner\l+  fgMaxMessageLength : BaseTestRunner\l+  fgFilterStack : BaseTestRunner\l|+  init() : void\l+  runFailed() : void\l+  testEnded() : void\l+  testFailed() : void\l+  testStarted() : void\l+  access000() : Z\l}"]
+ClassRulesTestXXX[label="{ClassRulesTestXXX|+  counter : ClassRulesTest$MethodExampleTestWithClassRule\l|+  init() : void\l+  getCounter() : ClassRulesTest$Counter\l+  firstTest() : void\l+  secondTest() : void\l+  access200() : ClassRulesTest$Counter\l+  clinit() : void\l}"]
+ParameterizedTestTestXXX[label="{ParameterizedTestTestXXX|+  x : ParameterizedTestTest$MultipleParametersBeforeParamAndAfterParam\l+  y : ParameterizedTestTest$MultipleParametersBeforeParamAndAfterParam\l|+  before() : void\l+  after() : void\l+  init() : void\l+  data() : Collection\l+  first() : void\l+  second() : void\l}"]
+TestRuleTest[label="{TestRuleTest|+  val$description : TestRuleTest$CustomTestName$1\l+  val$base : TestRuleTest$CustomTestName$1\l+  this$0 : TestRuleTest$CustomTestName$1\l|+  init() : void\l+  evaluate() : void\l}"]
+ParentRunnerXXX[label="{ParentRunnerXXX|+  entries : ParentRunner$ClassRuleCollector\l|+  init() : void\l+  accept() : void\l+  getOrderedRules() : List\l}"]
+StackTracesTestXXX[label="{StackTracesTestXXX|+  fName : TestCase\l|+  init() : void\l+  testAlwaysThrows() : void\l}"]
+TextFeedbackTestXXX[label="{TextFeedbackTestXXX|+  this$0 : TextFeedbackTest$2\l+  fName : TestCase\l|+  init() : void\l+  runTest() : void\l}"]
+AnnotationTest[label="{AnnotationTest||+  init() : void\l+  before() : void\l+  after() : void\l}"]
+Filterable[label="{Filterable||+  filter() : void\l}"]
+DisableOnDebugTestXXX[label="{DisableOnDebugTestXXX|+  failOnExecution : DisableOnDebugTest$AbstractDisableOnDebugTest\l|+  init() : void\l}"]
+MethodRulesTest[label="{MethodRulesTest|+  this$0 : MethodRulesTest$BeforesAndAfters$1\l|+  init() : void\l+  starting() : void\l+  finished() : void\l+  succeeded() : void\l}"]
+IgnoredBuilder[label="{IgnoredBuilder|+  parents : RunnerBuilder\l|+  init() : void\l+  runnerForClass() : Runner\l}"]
+ExternalResource[label="{ExternalResource||+  init() : void\l+  apply() : Statement\l+  statement() : Statement\l+  before() : void\l+  after() : void\l}"]
+Assert[label="{Assert||+  init() : void\l+  assertTrue() : void\l+  assertFalse() : void\l+  fail() : void\l+  assertEquals() : void\l+  equalsRegardingNull() : Z\l+  isEquals() : Z\l+  assertNotEquals() : void\l+  failEquals() : void\l+  assertArrayEquals() : void\l+  internalArrayEquals() : void\l+  doubleIsDifferent() : Z\l+  floatIsDifferent() : Z\l+  assertNotNull() : void\l+  assertNull() : void\l+  failNotNull() : void\l+  assertSame() : void\l+  assertNotSame() : void\l+  failSame() : void\l+  failNotSame() : void\l+  failNotEquals() : void\l+  format() : String\l+  formatClass() : String\l+  formatClassAndValue() : String\l+  assertThat() : void\l+  assertThrows() : void\l+  expectThrows() : Throwable\l}"]
+RuleMemberValidatorTestXXX[label="{RuleMemberValidatorTestXXX||+  init() : void\l+  arbitraryObject() : Object\l}"]
+Filter[label="{Filter|+  ALL : Filter\l|+  init() : void\l+  matchMethodDescription() : Filter\l+  shouldRun() : Z\l+  describe() : String\l+  apply() : void\l+  intersect() : Filter\l+  clinit() : void\l}"]
+TestRuleTestXXX[label="{TestRuleTestXXX|+  z : TestRuleTest$TestRuleIsAroundMethodRule\l+  a : TestRuleTest$TestRuleIsAroundMethodRule\l|+  init() : void\l+  foo() : void\l}"]
+RunListener[label="{RunListener||+  init() : void\l+  testRunStarted() : void\l+  testRunFinished() : void\l+  testSuiteStarted() : void\l+  testSuiteFinished() : void\l+  testStarted() : void\l+  testFinished() : void\l+  testFailure() : void\l+  testAssumptionFailure() : void\l+  testIgnored() : void\l}"]
+IncludeCategories[label="{IncludeCategories||+  init() : void\l+  createFilter() : Filter\l}"]
+ParameterizedXXX[label="{ParameterizedXXX|+  description : Parameterized$AssumptionViolationRunner\l+  exception : Parameterized$AssumptionViolationRunner\l|+  init() : void\l+  getDescription() : Description\l+  run() : void\l}"]
+ClassRulesTest[label="{ClassRulesTest||+  init() : void\l+  apply() : Statement\l}"]
+Runner[label="{Runner||+  init() : void\l+  getDescription() : Description\l+  run() : void\l+  testCount() : I\l}"]
+BlockJUnit4ClassRunnerXXX[label="{BlockJUnit4ClassRunnerXXX|+  val$method : BlockJUnit4ClassRunner$2\l+  this$0 : BlockJUnit4ClassRunner$2\l|+  init() : void\l+  runReflectiveCall() : Object\l}"]
+TestClassXXX[label="{TestClassXXX||+  init() : void\l+  compare() : I\l}"]
+CategoriesXXX[label="{CategoriesXXX|+  included : Categories$CategoryFilter\l+  excluded : Categories$CategoryFilter\l+  includedAny : Categories$CategoryFilter\l+  excludedAny : Categories$CategoryFilter\l+  ALL : Filter\l|+  include() : Categories$CategoryFilter\l+  exclude() : Categories$CategoryFilter\l+  categoryFilter() : Categories$CategoryFilter\l+  init() : void\l+  describe() : String\l+  toString() : String\l+  shouldRun() : Z\l+  hasCorrectCategoryAnnotation() : Z\l+  matchesAnyParentCategories() : Z\l+  matchesAllParentCategories() : Z\l+  categories() : Set\l+  parentDescription() : Description\l+  directCategories() : Class\l+  copyAndRefine() : Set\l}"]
+MethodRulesTestXXX[label="{MethodRulesTestXXX|+  counter : MethodRulesTest$UsesCustomMethodRule\l|+  init() : void\l+  foo() : void\l}"]
+SingleMethodTestXXX[label="{SingleMethodTestXXX||+  params() : List\l+  init() : void\l+  one() : void\l}"]
+ParentRunnerTestXXX[label="{ParentRunnerTestXXX||+  init() : void\l+  beforeClass() : void\l+  test() : void\l}"]
+TestImplementorTest[label="{TestImplementorTest|+  this$0 : TestImplementorTest$DoubleTestCase$1\l|+  init() : void\l+  protect() : void\l}"]
+ExpectedException[label="{ExpectedException|+  matcherBuilder : ExpectedException\l+  missingExceptionMessage : ExpectedException\l|+  none() : ExpectedException\l+  init() : void\l+  handleAssertionErrors() : ExpectedException\l+  handleAssumptionViolatedExceptions() : ExpectedException\l+  reportMissingExceptionWithMessage() : ExpectedException\l+  apply() : Statement\l+  expect() : void\l+  expectMessage() : void\l+  expectCause() : void\l+  isAnyExceptionExpected() : Z\l+  handleException() : void\l+  failDueToMissingException() : void\l+  missingExceptionMessage() : ExpectedException\l+  access000() : void\l+  access100() : void\l}"]
+StopwatchTest[label="{StopwatchTest|+  this$0 : StopwatchTest$AbstractStopwatchTest$1\l|+  init() : void\l+  nanoTime() : J\l}"]
+AssumptionViolatedException[label="{AssumptionViolatedException|+  fAssumption : AssumptionViolatedException\l+  fValueMatcher : AssumptionViolatedException\l+  fValue : AssumptionViolatedException\l+  fMatcher : AssumptionViolatedException\l+  backtrace : Throwable\l+  detailMessage : Throwable\l+  cause : Throwable\l+  stackTrace : Throwable\l+  suppressedExceptions : Throwable\l+  serialVersionUID : Throwable\l+  UNASSIGNED_STACK : Throwable\l+  SUPPRESSED_SENTINEL : Throwable\l+  NULL_CAUSE_MESSAGE : Throwable\l+  SELF_SUPPRESSION_MESSAGE : Throwable\l+  CAUSE_CAPTION : Throwable\l+  SUPPRESSED_CAPTION : Throwable\l+  EMPTY_THROWABLE_ARRAY : Throwable\l+  $assertionsDisabled : Throwable\l|+  init() : void\l}"]
+RunnerTestXXX[label="{RunnerTestXXX||+  init() : void\l+  empty() : void\l}"]
+CustomBlockJUnit4ClassRunnerTestXXX[label="{CustomBlockJUnit4ClassRunnerTestXXX|+  methodDescriptions : BlockJUnit4ClassRunner\l+  childrenLock : ParentRunner\l+  testClass : ParentRunner\l+  filteredChildren : ParentRunner\l+  scheduler : ParentRunner\l+  PUBLIC_CLASS_VALIDATOR : BlockJUnit4ClassRunner\l+  CURRENT_RULE_CONTAINER : BlockJUnit4ClassRunner\l+  VALIDATORS : ParentRunner\l|+  init() : void\l+  methodBlock() : Statement\l}"]
+ExternalResourceRuleTestXXX[label="{ExternalResourceRuleTestXXX|+  resource : ExternalResourceRuleTest$UsesExternalResource\l|+  init() : void\l+  testFoo() : void\l}"]
+RuleContainerTestXXX[label="{RuleContainerTestXXX|+  name : Enum\l+  ordinal : Enum\l+  M1 : RuleContainerTest$MRule\l+  M2 : RuleContainerTest$MRule\l+  $VALUES : RuleContainerTest$MRule\l|+  values() : RuleContainerTest$MRule\l+  valueOf() : RuleContainerTest$MRule\l+  init() : void\l+  apply() : Statement\l+  clinit() : void\l}"]
+InitializationErrorForwardCompatibilityTestXXX[label="{InitializationErrorForwardCompatibilityTestXXX|+  UNIQUE_ERROR_MESSAGE : InitializationErrorForwardCompatibilityTest$CantInitialize\l|+  init() : void\l+  getDescription() : Description\l+  run() : void\l}"]
+TemporaryFolderRuleAssuredDeletionTestXXX[label="{TemporaryFolderRuleAssuredDeletionTestXXX||}"]
+ForwardCompatibilityTestXXX[label="{ForwardCompatibilityTestXXX||+  init() : void\l+  expected() : void\l}"]
+JUnit4Builder[label="{JUnit4Builder|+  parents : RunnerBuilder\l|+  init() : void\l+  runnerForClass() : Runner\l}"]
+Statement[label="{Statement||+  init() : void\l+  evaluate() : void\l}"]
+TimeoutTestXXX[label="{TimeoutTestXXX||+  init() : void\l+  success() : void\l}"]
+StopwatchXXX[label="{StopwatchXXX||}"]
+FrameworkMethodXXX[label="{FrameworkMethodXXX|+  val$target : FrameworkMethod$1\l+  val$params : FrameworkMethod$1\l+  this$0 : FrameworkMethod$1\l|+  init() : void\l+  runReflectiveCall() : Object\l}"]
+ParentRunnerFilteringTestXXX[label="{ParentRunnerFilteringTestXXX||+  init() : void\l}"]
+TestResultXXX[label="{TestResultXXX|+  val$test : TestResult$1\l+  this$0 : TestResult$1\l|+  init() : void\l+  protect() : void\l}"]
+JUnitCommandLineParseResultTestXXX[label="{JUnitCommandLineParseResultTestXXX||+  init() : void\l+  createFilter() : Filter\l}"]
+ExternalResourceRuleTest[label="{ExternalResourceRuleTest|+  this$0 : ExternalResourceRuleTest$TestFailsAndTwoClosingResourcesFail$1\l|+  init() : void\l+  after() : void\l}"]
+FilterFactoriesTestXXX[label="{FilterFactoriesTestXXX|+  fTopLevelDescription : FilterFactoriesTest$DummyFilter\l+  ALL : Filter\l|+  init() : void\l+  getTopLevelDescription() : Description\l+  shouldRun() : Z\l+  describe() : String\l}"]
+BlockJUnit4ClassRunnerWithParametersXXX[label="{BlockJUnit4ClassRunnerWithParametersXXX|+  this$0 : BlockJUnit4ClassRunnerWithParameters$RunBeforeParams\l+  next : RunBefores\l+  target : RunBefores\l+  befores : RunBefores\l|+  init() : void\l+  invokeMethod() : void\l}"]
+TemporaryFolder[label="{TemporaryFolder|+  parentFolder : TemporaryFolder\l+  assureDeletion : TemporaryFolder\l+  folder : TemporaryFolder\l+  TEMP_DIR_ATTEMPTS : TemporaryFolder\l+  TMP_PREFIX : TemporaryFolder\l|+  init() : void\l+  builder() : TemporaryFolder$Builder\l+  before() : void\l+  after() : void\l+  create() : void\l+  newFile() : File\l+  newFolder() : File\l+  createTemporaryFolderIn() : File\l+  getRoot() : File\l+  delete() : void\l+  tryDelete() : Z\l+  recursiveDelete() : Z\l}"]
+TestWatchmanTestXXX[label="{TestWatchmanTestXXX|+  watchman : TestWatchmanTest$ViolatedAssumptionTest\l+  log : TestWatchmanTest$ViolatedAssumptionTest\l|+  init() : void\l+  initLog() : void\l+  succeeds() : void\l}"]
+ParametersRunnerFactory[label="{ParametersRunnerFactory||+  createRunnerForTestWithParameters() : Runner\l}"]
+ForwardCompatibilityPrintingTestXXX[label="{ForwardCompatibilityPrintingTestXXX||+  init() : void\l+  error() : void\l}"]
+MaxStarterTestXXX[label="{MaxStarterTestXXX||+  init() : void\l+  testSucceeds() : void\l}"]
+ParentRunner[label="{ParentRunner|+  childrenLock : ParentRunner\l+  testClass : ParentRunner\l+  filteredChildren : ParentRunner\l+  scheduler : ParentRunner\l+  VALIDATORS : ParentRunner\l|+  init() : void\l+  createTestClass() : TestClass\l+  getChildren() : List\l+  describeChild() : Description\l+  runChild() : void\l+  collectInitializationErrors() : void\l+  applyValidators() : void\l+  validatePublicVoidNoArgMethods() : void\l+  validateClassRules() : void\l+  classBlock() : Statement\l+  areAllChildrenIgnored() : Z\l+  withBeforeClasses() : Statement\l+  withAfterClasses() : Statement\l+  withClassRules() : Statement\l+  classRules() : List\l+  childrenInvoker() : Statement\l+  isIgnored() : Z\l+  runChildren() : void\l+  getName() : String\l+  getTestClass() : TestClass\l+  runLeaf() : void\l+  getRunnerAnnotations() : Annotation\l+  getDescription() : Description\l+  run() : void\l+  filter() : void\l+  sort() : void\l+  validate() : void\l+  getFilteredChildren() : Collection\l+  shouldRun() : Z\l+  comparator() : Comparator\l+  setScheduler() : void\l+  access100() : void\l+  clinit() : void\l}"]
+TestWatcherTest[label="{TestWatcherTest|+  this$0 : TestWatcherTest$TestWatcherFailedThrowsExceptionTest$1\l|+  init() : void\l+  failed() : void\l}"]
+WithParameterSupplierXXX[label="{WithParameterSupplierXXX|+  description : WithParameterSupplier$SimplePotentialAssignment\l+  value : WithParameterSupplier$SimplePotentialAssignment\l|+  init() : void\l+  getValue() : Object\l+  getDescription() : String\l}"]
+JUnit38ClassRunnerTestXXX[label="{JUnit38ClassRunnerTestXXX|+  fName : TestCase\l|+  init() : void\l+  testOne() : void\l}"]
+LoggingMethodRule[label="{LoggingMethodRule|+  log : LoggingMethodRule\l+  name : LoggingMethodRule\l|+  init() : void\l+  apply() : Statement\l}"]
+BlockJUnit4ClassRunnerOverrideTestXXX[label="{BlockJUnit4ClassRunnerOverrideTestXXX||+  init() : void\l+  apply() : Statement\l}"]
+TestListenerTest[label="{TestListenerTest|+  count : TestListenerTest\l|+  init() : void\l+  failingListener() : void\l+  reportsFailureOfListener() : void\l+  freshResultEachTime() : void\l}"]
+ParallelComputerXXX[label="{ParallelComputerXXX|+  fService : ParallelComputer$1\l|+  init() : void\l+  schedule() : void\l+  finished() : void\l}"]
+ParentRunnerClassLoaderTestXXX[label="{ParentRunnerClassLoaderTestXXX|+  val$waitClass : ParentRunnerClassLoaderTest$1\l+  this$0 : ParentRunnerClassLoaderTest$1\l+  methodDescriptions : BlockJUnit4ClassRunner\l+  childrenLock : ParentRunner\l+  testClass : ParentRunner\l+  filteredChildren : ParentRunner\l+  scheduler : ParentRunner\l+  PUBLIC_CLASS_VALIDATOR : BlockJUnit4ClassRunner\l+  CURRENT_RULE_CONTAINER : BlockJUnit4ClassRunner\l+  VALIDATORS : ParentRunner\l|+  init() : void\l+  getName() : String\l}"]
+Theories[label="{Theories|+  methodDescriptions : BlockJUnit4ClassRunner\l+  childrenLock : ParentRunner\l+  testClass : ParentRunner\l+  filteredChildren : ParentRunner\l+  scheduler : ParentRunner\l+  PUBLIC_CLASS_VALIDATOR : BlockJUnit4ClassRunner\l+  CURRENT_RULE_CONTAINER : BlockJUnit4ClassRunner\l+  VALIDATORS : ParentRunner\l|+  init() : void\l+  collectInitializationErrors() : void\l+  validateDataPointFields() : void\l+  validateDataPointMethods() : void\l+  validateConstructor() : void\l+  validateTestMethods() : void\l+  validateParameterSupplier() : void\l+  computeTestMethods() : List\l+  methodBlock() : Statement\l}"]
+JUnit38ClassRunnerXXX[label="{JUnit38ClassRunnerXXX|+  notifier : JUnit38ClassRunner$OldTestClassAdaptingListener\l|+  init() : void\l+  endTest() : void\l+  startTest() : void\l+  addError() : void\l+  asDescription() : Description\l+  getEffectiveClass() : Class\l+  getName() : String\l+  addFailure() : void\l}"]
+FilterableTestXXX[label="{FilterableTestXXX||+  parameters() : List\l+  init() : void\l+  skipThis() : void\l+  runThis() : void\l}"]
+FilterXXX[label="{FilterXXX|+  val$desiredDescription : Filter$2\l+  ALL : Filter\l|+  init() : void\l+  shouldRun() : Z\l+  describe() : String\l}"]
+ComputerXXX[label="{ComputerXXX|+  val$builder : Computer$1\l+  this$0 : Computer$1\l+  parents : RunnerBuilder\l|+  init() : void\l+  runnerForClass() : Runner\l}"]
+AllTests[label="{AllTests||+  init() : void\l+  suite() : Test\l}"]
+BlockJUnit4ClassRunner[label="{BlockJUnit4ClassRunner|+  methodDescriptions : BlockJUnit4ClassRunner\l+  childrenLock : ParentRunner\l+  testClass : ParentRunner\l+  filteredChildren : ParentRunner\l+  scheduler : ParentRunner\l+  PUBLIC_CLASS_VALIDATOR : BlockJUnit4ClassRunner\l+  CURRENT_RULE_CONTAINER : BlockJUnit4ClassRunner\l+  VALIDATORS : ParentRunner\l|+  init() : void\l+  runChild() : void\l+  isIgnored() : Z\l+  describeChild() : Description\l+  getChildren() : List\l+  computeTestMethods() : List\l+  collectInitializationErrors() : void\l+  validatePublicConstructor() : void\l+  validateNoNonStaticInnerClass() : void\l+  validateConstructor() : void\l+  validateOnlyOneConstructor() : void\l+  validateZeroArgConstructor() : void\l+  hasOneConstructor() : Z\l+  validateInstanceMethods() : void\l+  validateFields() : void\l+  validateMethods() : void\l+  validateTestMethods() : void\l+  createTest() : Object\l+  testName() : String\l+  methodBlock() : Statement\l+  methodInvoker() : Statement\l+  possiblyExpectingExceptions() : Statement\l+  withPotentialTimeout() : Statement\l+  withBefores() : Statement\l+  withAfters() : Statement\l+  withRules() : Statement\l+  rules() : List\l+  getTestRules() : List\l+  getExpectedException() : Class\l+  getTimeout() : J\l+  access100() : ThreadLocal\l+  clinit() : void\l}"]
+JUnit4TestAdapter[label="{JUnit4TestAdapter|+  fNewTestClass : JUnit4TestAdapter\l+  fRunner : JUnit4TestAdapter\l+  fCache : JUnit4TestAdapter\l|+  init() : void\l+  countTestCases() : I\l+  run() : void\l+  getTests() : List\l+  getTestClass() : Class\l+  getDescription() : Description\l+  removeIgnored() : Description\l+  isIgnored() : Z\l+  toString() : String\l+  filter() : void\l+  sort() : void\l}"]
+Protectable[label="{Protectable||+  protect() : void\l}"]
+RuleMemberValidatorTest[label="{RuleMemberValidatorTest||+  init() : void\l+  apply() : Statement\l}"]
+Describable[label="{Describable||+  getDescription() : Description\l}"]
+StubbedTheoriesXXX[label="{StubbedTheoriesXXX|+  queues : StubbedTheories$StubbedTheoryAnchor\l+  successes : Theories$TheoryAnchor\l+  testMethod : Theories$TheoryAnchor\l+  testClass : Theories$TheoryAnchor\l+  fInvalidParameters : Theories$TheoryAnchor\l|+  init() : void\l+  handleAssumptionViolation() : void\l+  runWithIncompleteAssignment() : void\l+  createGuesserQueue() : GuesserQueue\l}"]
+ClassLevelMethodsWithIgnoredTestsTestXXX[label="{ClassLevelMethodsWithIgnoredTestsTestXXX||+  init() : void\l+  apply() : Statement\l}"]
+TestListener[label="{TestListener||+  addError() : void\l+  addFailure() : void\l+  endTest() : void\l+  startTest() : void\l}"]
+ReguessableValue[label="{ReguessableValue||+  init() : void\l+  reguesses() : List\l}"]
+BlockJUnit4ClassRunnerOverrideTest[label="{BlockJUnit4ClassRunnerOverrideTest||+  init() : void\l+  overrideRulesMethod() : void\l+  overrideTestRulesMethod() : void\l+  overrideCreateTestMethod() : void\l+  createTestDefersToNoArgCreateTest() : void\l}"]
+TheoriesXXX[label="{TheoriesXXX|+  successes : Theories$TheoryAnchor\l+  testMethod : Theories$TheoryAnchor\l+  testClass : Theories$TheoryAnchor\l+  fInvalidParameters : Theories$TheoryAnchor\l|+  init() : void\l+  getTestClass() : TestClass\l+  evaluate() : void\l+  runWithAssignment() : void\l+  runWithIncompleteAssignment() : void\l+  runWithCompleteAssignment() : void\l+  methodCompletesWithParameters() : Statement\l+  handleAssumptionViolation() : void\l+  reportParameterizedError() : void\l+  nullsOk() : Z\l+  handleDataPointSuccess() : void\l+  access000() : Z\l+  access100() : Statement\l}"]
+ActiveTestSuite[label="{ActiveTestSuite|+  fActiveTestDeathCount : ActiveTestSuite\l+  fName : TestSuite\l+  fTests : TestSuite\l|+  init() : void\l+  run() : void\l+  runTest() : void\l+  waitUntilFinished() : void\l+  runFinished() : void\l}"]
+JUnit38ClassRunner[label="{JUnit38ClassRunner|+  test : JUnit38ClassRunner\l|+  init() : void\l+  run() : void\l+  createAdaptingListener() : TestListener\l+  getDescription() : Description\l+  makeDescription() : Description\l+  getAnnotations() : Annotation\l+  createSuiteDescription() : String\l+  filter() : void\l+  sort() : void\l+  setTest() : void\l+  getTest() : Test\l}"]
+TestSuite[label="{TestSuite|+  fName : TestSuite\l+  fTests : TestSuite\l|+  createTest() : Test\l+  getTestConstructor() : Constructor\l+  warning() : Test\l+  init() : void\l+  addTestsFromTestCase() : void\l+  testCaseForClass() : Test\l+  addTest() : void\l+  addTestSuite() : void\l+  countTestCases() : I\l+  getName() : String\l+  run() : void\l+  runTest() : void\l+  setName() : void\l+  testAt() : Test\l+  testCount() : I\l+  tests() : Enumeration\l+  toString() : String\l+  addTestMethod() : void\l+  isPublicTestMethod() : Z\l+  isTestMethod() : Z\l}"]
+JUnit4ClassRunner[label="{JUnit4ClassRunner|+  testMethods : JUnit4ClassRunner\l+  testClass : JUnit4ClassRunner\l|+  init() : void\l+  getTestMethods() : List\l+  validate() : void\l+  run() : void\l+  runMethods() : void\l+  getDescription() : Description\l+  classAnnotations() : Annotation\l+  getName() : String\l+  createTest() : Object\l+  invokeTestMethod() : void\l+  testAborted() : void\l+  wrapMethod() : TestMethod\l+  testName() : String\l+  methodDescription() : Description\l+  testAnnotations() : Annotation\l+  filter() : void\l+  sort() : void\l+  getTestClass() : TestClass\l}"]
+FilterableTest[label="{FilterableTest|+  this$0 : FilterableTest$FilteredRunner$1\l+  ALL : Filter\l|+  init() : void\l+  shouldRun() : Z\l+  describe() : String\l}"]
+NullBuilder[label="{NullBuilder|+  parents : RunnerBuilder\l|+  init() : void\l+  runnerForClass() : Runner\l}"]
+DisableOnDebug[label="{DisableOnDebug|+  rule : DisableOnDebug\l+  debugging : DisableOnDebug\l|+  init() : void\l+  apply() : Statement\l+  isDebugging() : Z\l}"]
+RunnerSpy[label="{RunnerSpy|+  invokedRunnerBuilder : RunnerSpy\l+  invokedTestClass : RunnerSpy\l+  DESCRIPTION : RunnerSpy\l|+  init() : void\l+  getDescription() : Description\l+  run() : void\l+  getInvokedRunnerBuilder() : RunnerBuilder\l+  getInvokedTestClass() : Class\l+  clinit() : void\l}"]
+TestSetupXXX[label="{TestSetupXXX|+  val$result : TestSetup$1\l+  this$0 : TestSetup$1\l|+  init() : void\l+  protect() : void\l}"]
+UseSuiteAsASuperclassTestXXX[label="{UseSuiteAsASuperclassTestXXX||+  init() : void\l+  pass() : void\l}"]
+Parameterized[label="{Parameterized|+  runners : Suite\l+  childrenLock : ParentRunner\l+  testClass : ParentRunner\l+  filteredChildren : ParentRunner\l+  scheduler : ParentRunner\l+  VALIDATORS : ParentRunner\l|+  init() : void\l+  validateBeforeParamAndAfterParamMethods() : void\l+  validatePublicStaticVoidMethods() : void\l}"]
+ClassRequestXXX[label="{ClassRequestXXX|+  this$0 : ClassRequest$CustomSuiteMethodBuilder\l+  parents : RunnerBuilder\l|+  init() : void\l+  runnerForClass() : Runner\l}"]
+RunWithTestXXX[label="{RunWithTestXXX||+  init() : void\l}"]
+TestedOnSupplier[label="{TestedOnSupplier||+  init() : void\l+  getValueSources() : List\l}"]
+ReflectiveCallable[label="{ReflectiveCallable||+  init() : void\l+  run() : Object\l+  runReflectiveCall() : Object\l}"]
+Test[label="{Test||+  countTestCases() : I\l+  run() : void\l}"]
+IncludeCategoriesXXX[label="{IncludeCategoriesXXX|+  included : Categories$CategoryFilter\l+  excluded : Categories$CategoryFilter\l+  includedAny : Categories$CategoryFilter\l+  excludedAny : Categories$CategoryFilter\l+  ALL : Filter\l|+  init() : void\l+  describe() : String\l}"]
+PotentialAssignmentXXX[label="{PotentialAssignmentXXX|+  val$value : PotentialAssignment$1\l+  val$name : PotentialAssignment$1\l|+  init() : void\l+  getValue() : Object\l+  toString() : String\l+  getDescription() : String\l}"]
+RepeatedTest[label="{RepeatedTest|+  fTimesRepeat : RepeatedTest\l+  fTest : TestDecorator\l|+  init() : void\l+  countTestCases() : I\l+  run() : void\l+  toString() : String\l}"]
+RuleChainTestXXX[label="{RuleChainTestXXX|+  chain : RuleChainTest$RuleChainWithNullRules\l|+  init() : void\l+  example() : void\l}"]
+Timeout[label="{Timeout|+  timeout : Timeout\l+  timeUnit : Timeout\l+  lookForStuckThread : Timeout\l|+  builder() : Timeout$Builder\l+  init() : void\l+  millis() : Timeout\l+  seconds() : Timeout\l+  getTimeout() : J\l+  getLookingForStuckThread() : Z\l+  createFailOnTimeoutStatement() : Statement\l+  apply() : Statement\l}"]
+BlockJUnit4ClassRunnerWithParametersFactory[label="{BlockJUnit4ClassRunnerWithParametersFactory||+  init() : void\l+  createRunnerForTestWithParameters() : Runner\l}"]
+GuesserQueueXXX[label="{GuesserQueueXXX|+  delegate : GuesserQueue$ReguessableDecorator\l|+  init() : void\l+  reguesses() : List\l+  getValue() : Object\l+  getDescription() : String\l}"]
+MaxCore[label="{MaxCore|+  history : MaxCore\l+  MALFORMED_JUNIT_3_TEST_CLASS_PREFIX : MaxCore\l|+  forFolder() : MaxCore\l+  storedLocally() : MaxCore\l+  init() : void\l+  run() : Result\l+  sortRequest() : Request\l+  constructLeafRequest() : Request\l+  buildRunner() : Runner\l+  getMalformedTestClass() : Class\l+  sortedLeavesForTest() : List\l+  findLeaves() : void\l}"]
+Categories[label="{Categories|+  runners : Suite\l+  childrenLock : ParentRunner\l+  testClass : ParentRunner\l+  filteredChildren : ParentRunner\l+  scheduler : ParentRunner\l+  VALIDATORS : ParentRunner\l|+  init() : void\l+  getIncludedCategory() : Set\l+  isAnyIncluded() : Z\l+  getExcludedCategory() : Set\l+  isAnyExcluded() : Z\l+  hasAssignableTo() : Z\l+  createSet() : Set\l+  nullableClassToSet() : Set\l+  access000() : Set\l+  access100() : Set\l+  access200() : Z\l}"]
+ExpectExceptionTestXXX[label="{ExpectExceptionTestXXX||+  init() : void\l+  evaluate() : void\l}"]
+JUnit3Builder[label="{JUnit3Builder|+  parents : RunnerBuilder\l|+  init() : void\l+  runnerForClass() : Runner\l+  isPre4Test() : Z\l}"]
+Sortable[label="{Sortable||+  sort() : void\l}"]
+ExcludeCategoriesXXX[label="{ExcludeCategoriesXXX|+  included : Categories$CategoryFilter\l+  excluded : Categories$CategoryFilter\l+  includedAny : Categories$CategoryFilter\l+  excludedAny : Categories$CategoryFilter\l+  ALL : Filter\l|+  init() : void\l+  describe() : String\l}"]
+AllDefaultPossibilitiesBuilder[label="{AllDefaultPossibilitiesBuilder|+  canUseSuiteMethod : AllDefaultPossibilitiesBuilder\l+  parents : RunnerBuilder\l|+  init() : void\l+  runnerForClass() : Runner\l+  junit4Builder() : JUnit4Builder\l+  junit3Builder() : JUnit3Builder\l+  annotatedBuilder() : AnnotatedBuilder\l+  ignoredBuilder() : IgnoredBuilder\l+  suiteMethodBuilder() : RunnerBuilder\l}"]
+Enclosed[label="{Enclosed|+  runners : Suite\l+  childrenLock : ParentRunner\l+  testClass : ParentRunner\l+  filteredChildren : ParentRunner\l+  scheduler : ParentRunner\l+  VALIDATORS : ParentRunner\l|+  init() : void\l+  filterAbstractClasses() : Class\l}"]
+SuiteMethodBuilder[label="{SuiteMethodBuilder|+  parents : RunnerBuilder\l|+  init() : void\l+  runnerForClass() : Runner\l+  hasSuiteMethod() : Z\l}"]
+Verifier[label="{Verifier||+  init() : void\l+  apply() : Statement\l+  verify() : void\l}"]
+ParameterSupplier[label="{ParameterSupplier||+  init() : void\l+  getValueSources() : List\l}"]
+PotentialAssignment[label="{PotentialAssignment||+  init() : void\l+  forValue() : PotentialAssignment\l+  getValue() : Object\l+  getDescription() : String\l}"]
+TestWatchman[label="{TestWatchman||+  init() : void\l+  apply() : Statement\l+  succeeded() : void\l+  failed() : void\l+  starting() : void\l+  finished() : void\l}"]
+CategoryFilterFactoryTestXXX[label="{CategoryFilterFactoryTestXXX||+  init() : void\l+  createFilter() : Filter\l}"]
+TestWithClassRuleXXX[label="{TestWithClassRuleXXX||+  init() : void\l+  apply() : Statement\l}"]
+ThrowingRunnable[label="{ThrowingRunnable||+  run() : void\l}"]
+ExcludeCategories[label="{ExcludeCategories||+  init() : void\l+  createFilter() : Filter\l}"]
+CategoryFilterFactory[label="{CategoryFilterFactory||+  init() : void\l+  createFilter() : Filter\l+  parseCategories() : List\l}"]
+EnumSupplier[label="{EnumSupplier|+  enumType : EnumSupplier\l|+  init() : void\l+  getValueSources() : List\l}"]
+RunAfters[label="{RunAfters|+  next : RunAfters\l+  target : RunAfters\l+  afters : RunAfters\l|+  init() : void\l+  evaluate() : void\l+  invokeMethod() : void\l}"]
+MemberValueConsumer[label="{MemberValueConsumer||+  accept() : void\l}"]
+TestCase[label="{TestCase|+  fName : TestCase\l|+  init() : void\l+  countTestCases() : I\l+  createResult() : TestResult\l+  run() : void\l+  runBare() : void\l+  runTest() : void\l+  assertTrue() : void\l+  assertFalse() : void\l+  fail() : void\l+  assertEquals() : void\l+  assertNotNull() : void\l+  assertNull() : void\l+  assertSame() : void\l+  assertNotSame() : void\l+  failSame() : void\l+  failNotSame() : void\l+  failNotEquals() : void\l+  format() : String\l+  setUp() : void\l+  tearDown() : void\l+  toString() : String\l+  getName() : String\l+  setName() : void\l}"]
+Stopwatch[label="{Stopwatch|+  clock : Stopwatch\l+  startNanos : Stopwatch\l+  endNanos : Stopwatch\l|+  init() : void\l+  runtime() : J\l+  succeeded() : void\l+  failed() : void\l+  skipped() : void\l+  finished() : void\l+  getNanos() : J\l+  starting() : void\l+  stopping() : void\l+  apply() : Statement\l+  access100() : void\l+  access200() : J\l+  access300() : void\l}"]
+RuleChain[label="{RuleChain|+  rulesStartingWithInnerMost : RuleChain\l+  EMPTY_CHAIN : RuleChain\l|+  emptyRuleChain() : RuleChain\l+  outerRule() : RuleChain\l+  init() : void\l+  around() : RuleChain\l+  apply() : Statement\l+  clinit() : void\l}"]
+FilterTestXXX[label="{FilterTestXXX|+  fName : FilterTest$NamedFilter\l+  ALL : Filter\l|+  init() : void\l+  shouldRun() : Z\l+  describe() : String\l}"]
+AllMembersSupplierXXX[label="{AllMembersSupplierXXX|+  method : AllMembersSupplier$MethodParameterValue\l|+  init() : void\l+  getValue() : Object\l+  getDescription() : String\l}"]
+BaseTestRunner[label="{BaseTestRunner|+  fLoading : BaseTestRunner\l+  SUITE_METHODNAME : BaseTestRunner\l+  fPreferences : BaseTestRunner\l+  fgMaxMessageLength : BaseTestRunner\l+  fgFilterStack : BaseTestRunner\l|+  init() : void\l+  startTest() : void\l+  setPreferences() : void\l+  getPreferences() : Properties\l+  savePreferences() : void\l+  setPreference() : void\l+  endTest() : void\l+  addError() : void\l+  addFailure() : void\l+  testStarted() : void\l+  testEnded() : void\l+  testFailed() : void\l+  getTest() : Test\l+  elapsedTimeAsString() : String\l+  processArguments() : String\l+  setLoading() : void\l+  extractClassName() : String\l+  truncate() : String\l+  runFailed() : void\l+  loadSuiteClass() : Class\l+  clearStatus() : void\l+  useReloadingTestSuiteLoader() : Z\l+  getPreferencesFile() : File\l+  readPreferences() : void\l+  getPreference() : I\l+  getFilteredTrace() : String\l+  showStackRaw() : Z\l+  filterLine() : Z\l+  clinit() : void\l}"]
+SpecificDataPointsSupplier[label="{SpecificDataPointsSupplier|+  clazz : AllMembersSupplier\l|+  init() : void\l+  getSingleDataPointFields() : Collection\l+  getDataPointsFields() : Collection\l+  getSingleDataPointMethods() : Collection\l+  getDataPointsMethods() : Collection\l}"]
+RunBefores[label="{RunBefores|+  next : RunBefores\l+  target : RunBefores\l+  befores : RunBefores\l|+  init() : void\l+  evaluate() : void\l+  invokeMethod() : void\l}"]
+RunnerBuilderStub[label="{RunnerBuilderStub|+  parents : RunnerBuilder\l|+  init() : void\l+  runnerForClass() : Runner\l}"]
+OneTestCase[label="{OneTestCase|+  fName : TestCase\l|+  init() : void\l+  noTestCase() : void\l+  testCase() : void\l}"]
+JUnit4[label="{JUnit4|+  methodDescriptions : BlockJUnit4ClassRunner\l+  childrenLock : ParentRunner\l+  testClass : ParentRunner\l+  filteredChildren : ParentRunner\l+  scheduler : ParentRunner\l+  PUBLIC_CLASS_VALIDATOR : BlockJUnit4ClassRunner\l+  CURRENT_RULE_CONTAINER : BlockJUnit4ClassRunner\l+  VALIDATORS : ParentRunner\l|+  init() : void\l}"]
+TestName[label="{TestName|+  name : TestName\l|+  init() : void\l+  starting() : void\l+  getMethodName() : String\l}"]
+MethodRule[label="{MethodRule||+  apply() : Statement\l}"]
+TestSetup[label="{TestSetup|+  fTest : TestDecorator\l|+  init() : void\l+  run() : void\l+  setUp() : void\l+  tearDown() : void\l}"]
+OverrideTestCase[label="{OverrideTestCase|+  fName : TestCase\l|+  init() : void\l+  testCase() : void\l}"]
+BlockJUnit4ClassRunnerWithParameters[label="{BlockJUnit4ClassRunnerWithParameters|+  parameters : BlockJUnit4ClassRunnerWithParameters\l+  name : BlockJUnit4ClassRunnerWithParameters\l+  methodDescriptions : BlockJUnit4ClassRunner\l+  childrenLock : ParentRunner\l+  testClass : ParentRunner\l+  filteredChildren : ParentRunner\l+  scheduler : ParentRunner\l+  PUBLIC_CLASS_VALIDATOR : BlockJUnit4ClassRunner\l+  CURRENT_RULE_CONTAINER : BlockJUnit4ClassRunner\l+  VALIDATORS : ParentRunner\l|+  init() : void\l+  createTest() : Object\l+  createTestUsingConstructorInjection() : Object\l+  createTestUsingFieldInjection() : Object\l+  getName() : String\l+  testName() : String\l+  validateConstructor() : void\l+  validateFields() : void\l+  classBlock() : Statement\l+  withBeforeParams() : Statement\l+  withAfterParams() : Statement\l+  getRunnerAnnotations() : Annotation\l+  getAnnotatedFieldsByParameter() : List\l+  getInjectionType() : BlockJUnit4ClassRunnerWithParameters$InjectionType\l+  fieldsAreAnnotated() : Z\l+  access000() : Object\l}"]
+AnnotatedBuilder[label="{AnnotatedBuilder|+  suiteBuilder : AnnotatedBuilder\l+  parents : RunnerBuilder\l+  CONSTRUCTOR_ERROR_FORMAT : AnnotatedBuilder\l|+  init() : void\l+  runnerForClass() : Runner\l+  getEnclosingClassForNonStaticMemberClass() : Class\l+  buildRunner() : Runner\l}"]
+JUnit4TestCaseFacade[label="{JUnit4TestCaseFacade|+  fDescription : JUnit4TestCaseFacade\l|+  init() : void\l+  toString() : String\l+  countTestCases() : I\l+  run() : void\l+  getDescription() : Description\l}"]
+RunnerScheduler[label="{RunnerScheduler||+  schedule() : void\l+  finished() : void\l}"]
+FilterFactory[label="{FilterFactory||+  createFilter() : Filter\l}"]
+TestRunner[label="{TestRunner|+  fPrinter : TestRunner\l+  fLoading : BaseTestRunner\l+  SUCCESS_EXIT : TestRunner\l+  FAILURE_EXIT : TestRunner\l+  EXCEPTION_EXIT : TestRunner\l+  SUITE_METHODNAME : BaseTestRunner\l+  fPreferences : BaseTestRunner\l+  fgMaxMessageLength : BaseTestRunner\l+  fgFilterStack : BaseTestRunner\l|+  init() : void\l+  run() : TestResult\l+  runAndWait() : void\l+  testFailed() : void\l+  testStarted() : void\l+  testEnded() : void\l+  createTestResult() : TestResult\l+  doRun() : TestResult\l+  pause() : void\l+  main() : void\l+  start() : TestResult\l+  runSingleMethod() : TestResult\l+  runFailed() : void\l+  setPrinter() : void\l}"]
+TestWatcher[label="{TestWatcher||+  init() : void\l+  apply() : Statement\l+  succeededQuietly() : void\l+  failedQuietly() : void\l+  skippedQuietly() : void\l+  startingQuietly() : void\l+  finishedQuietly() : void\l+  succeeded() : void\l+  failed() : void\l+  skipped() : void\l+  starting() : void\l+  finished() : void\l+  access000() : void\l+  access100() : void\l+  access200() : void\l+  access300() : void\l+  access400() : void\l}"]
+IgnoredClassRunner[label="{IgnoredClassRunner|+  clazz : IgnoredClassRunner\l|+  init() : void\l+  run() : void\l+  getDescription() : Description\l}"]
+ErrorReportingRunner[label="{ErrorReportingRunner|+  causes : ErrorReportingRunner\l+  classNames : ErrorReportingRunner\l|+  init() : void\l+  getDescription() : Description\l+  run() : void\l+  getClassNames() : String\l+  getCauses() : List\l+  describeCause() : Description\l+  runCause() : void\l}"]
+LoggingTestRule[label="{LoggingTestRule|+  log : LoggingTestRule\l+  name : LoggingTestRule\l|+  init() : void\l+  apply() : Statement\l}"]
+TestRule[label="{TestRule||+  apply() : Statement\l}"]
+TestDecorator[label="{TestDecorator|+  fTest : TestDecorator\l|+  init() : void\l+  basicRun() : void\l+  countTestCases() : I\l+  run() : void\l+  toString() : String\l+  getTest() : Test\l}"]
+AllMembersSupplier[label="{AllMembersSupplier|+  clazz : AllMembersSupplier\l|+  init() : void\l+  getValueSources() : List\l+  addMultiPointMethods() : void\l+  addSinglePointMethods() : void\l+  addMultiPointFields() : void\l+  addSinglePointFields() : void\l+  addDataPointsValues() : void\l+  addArrayValues() : void\l+  addIterableValues() : void\l+  getStaticFieldValue() : Object\l+  isAssignableToAnyOf() : Z\l+  getDataPointsMethods() : Collection\l+  getSingleDataPointFields() : Collection\l+  getDataPointsFields() : Collection\l+  getSingleDataPointMethods() : Collection\l+  access000() : Z\l}"]
+Suite[label="{Suite|+  runners : Suite\l+  childrenLock : ParentRunner\l+  testClass : ParentRunner\l+  filteredChildren : ParentRunner\l+  scheduler : ParentRunner\l+  VALIDATORS : ParentRunner\l|+  emptySuite() : Runner\l+  getAnnotatedClasses() : Class\l+  init() : void\l+  getChildren() : List\l+  describeChild() : Description\l+  runChild() : void\l}"]
+RunnerBuilder[label="{RunnerBuilder|+  parents : RunnerBuilder\l|+  init() : void\l+  runnerForClass() : Runner\l+  safeRunnerForClass() : Runner\l+  addParent() : Class\l+  removeParent() : void\l+  runners() : List\l}"]
+SuiteMethod[label="{SuiteMethod|+  test : JUnit38ClassRunner\l|+  init() : void\l+  testFromSuiteMethod() : Test\l}"]
+StubbedTheories[label="{StubbedTheories|+  methodDescriptions : BlockJUnit4ClassRunner\l+  childrenLock : ParentRunner\l+  testClass : ParentRunner\l+  filteredChildren : ParentRunner\l+  scheduler : ParentRunner\l+  PUBLIC_CLASS_VALIDATOR : BlockJUnit4ClassRunner\l+  CURRENT_RULE_CONTAINER : BlockJUnit4ClassRunner\l+  VALIDATORS : ParentRunner\l|+  init() : void\l+  methodBlock() : Statement\l}"]
+ResultPrinter[label="{ResultPrinter|+  fWriter : ResultPrinter\l+  fColumn : ResultPrinter\l|+  init() : void\l+  print() : void\l+  printWaitPrompt() : void\l+  printHeader() : void\l+  printErrors() : void\l+  printFailures() : void\l+  printDefects() : void\l+  printDefect() : void\l+  printDefectHeader() : void\l+  printDefectTrace() : void\l+  printFooter() : void\l+  elapsedTimeAsString() : String\l+  getWriter() : PrintStream\l+  addError() : void\l+  addFailure() : void\l+  endTest() : void\l+  startTest() : void\l}"]
+ErrorCollector[label="{ErrorCollector|+  errors : ErrorCollector\l|+  init() : void\l+  verify() : void\l+  addError() : void\l+  checkThat() : void\l+  checkSucceeds() : Object\l+  checkThrows() : void\l}"]
+LoggingTestWatcher[label="{LoggingTestWatcher|+  log : LoggingTestWatcher\l|+  init() : void\l+  succeeded() : void\l+  failed() : void\l+  skipped() : void\l+  starting() : void\l+  finished() : void\l}"]
+BooleanSupplier[label="{BooleanSupplier||+  init() : void\l+  getValueSources() : List\l}"]
+edge [arrowhead = "empty"]
+AssertionTestXXX->ThrowingRunnable
+TestListenerTestXXX->RunListener
+TestListenerTestXXX->TestListenerTestXXX
+TestListenerTestXXX->TestCase
+VerifierRuleTest->Verifier
+VerifierRuleTest->ThrowingRunnable
+Guesser->ReguessableValue
+AnnotatedBuilderTestXXX->RunnerSpy
+ExtensionTestXXX->ExtensionTestXXX
+ExtensionTestXXX->TestCase
+ExtensionTestXXX->TestSetup
+InheritedTestCase->OneTestCase
+SortableTest->Runner
+BaseTestRunnerTestXXX->BaseTestRunner
+ClassRulesTestXXX->ClassRulesTestXXX
+ClassRulesTestXXX->ExternalResource
+ParameterizedTestTestXXX->RunListener
+ParameterizedTestTestXXX->ParametersRunnerFactory
+ParameterizedTestTestXXX->ParameterizedTestTestXXX
+TestRuleTest->Statement
+TestRuleTest->TestWatcher
+ParentRunnerXXX->Statement
+ParentRunnerXXX->MemberValueConsumer
+ParentRunnerXXX->RunnerScheduler
+StackTracesTestXXX->TestCase
+StackTracesTestXXX->MethodRule
+StackTracesTestXXX->TestRule
+TextFeedbackTestXXX->TextFeedbackTestXXX
+TextFeedbackTestXXX->TestCase
+TextFeedbackTestXXX->ResultPrinter
+AnnotationTest->ExternalResource
+AnnotationTest->TestCase
+DisableOnDebugTestXXX->DisableOnDebugTestXXX
+DisableOnDebugTestXXX->TestRule
+MethodRulesTest->Statement
+MethodRulesTest->TestWatchman
+IgnoredBuilder->RunnerBuilder
+ExternalResource->TestRule
+RuleMemberValidatorTestXXX->MethodRule
+TestRuleTestXXX->TestRuleTestXXX
+TestRuleTestXXX->MethodRule
+TestRuleTestXXX->TestRule
+IncludeCategories->CategoryFilterFactory
+ParameterizedXXX->Runner
+ClassRulesTest->Statement
+ClassRulesTest->TestRule
+Runner->Describable
+BlockJUnit4ClassRunnerXXX->Statement
+BlockJUnit4ClassRunnerXXX->ReflectiveCallable
+BlockJUnit4ClassRunnerXXX->MemberValueConsumer
+TestClassXXX->MemberValueConsumer
+CategoriesXXX->Filter
+MethodRulesTestXXX->MethodRulesTestXXX
+MethodRulesTestXXX->MethodRule
+MethodRulesTestXXX->TestRule
+SingleMethodTestXXX->Filter
+ParentRunnerTestXXX->Filter
+ParentRunnerTestXXX->RunListener
+ParentRunnerTestXXX->RunnerScheduler
+TestImplementorTest->Protectable
+TestImplementorTest->TestCase
+ExpectedException->TestRule
+StopwatchTest->StopwatchXXX
+StopwatchTest->Stopwatch
+AssumptionViolatedException->AssumptionViolatedException
+RunnerTestXXX->RunListener
+RunnerTestXXX->TestCase
+RunnerTestXXX->RunnerTestXXX
+CustomBlockJUnit4ClassRunnerTestXXX->RunListener
+CustomBlockJUnit4ClassRunnerTestXXX->BlockJUnit4ClassRunner
+ExternalResourceRuleTestXXX->ExternalResource
+ExternalResourceRuleTestXXX->Statement
+RuleContainerTestXXX->MethodRule
+RuleContainerTestXXX->TestRule
+InitializationErrorForwardCompatibilityTestXXX->Runner
+InitializationErrorForwardCompatibilityTestXXX->BlockJUnit4ClassRunner
+InitializationErrorForwardCompatibilityTestXXX->TestListener
+TemporaryFolderRuleAssuredDeletionTestXXX->TemporaryFolder
+ForwardCompatibilityTestXXX->Runner
+ForwardCompatibilityTestXXX->TestListener
+JUnit4Builder->RunnerBuilder
+TimeoutTestXXX->Timeout
+StopwatchXXX->TestWatcher
+FrameworkMethodXXX->ReflectiveCallable
+ParentRunnerFilteringTestXXX->Filter
+ParentRunnerFilteringTestXXX->Suite
+TestResultXXX->Protectable
+JUnitCommandLineParseResultTestXXX->FilterFactory
+ExternalResourceRuleTest->ExternalResource
+FilterFactoriesTestXXX->Filter
+FilterFactoriesTestXXX->FilterFactory
+BlockJUnit4ClassRunnerWithParametersXXX->RunAfters
+BlockJUnit4ClassRunnerWithParametersXXX->RunBefores
+TemporaryFolder->ExternalResource
+TestWatchmanTestXXX->TestWatchman
+ForwardCompatibilityPrintingTestXXX->ForwardCompatibilityPrintingTestXXX
+ForwardCompatibilityPrintingTestXXX->TestCase
+ForwardCompatibilityPrintingTestXXX->ResultPrinter
+MaxStarterTestXXX->Filter
+MaxStarterTestXXX->RunListener
+MaxStarterTestXXX->TestCase
+ParentRunner->Filterable
+ParentRunner->Runner
+ParentRunner->Sortable
+TestWatcherTest->TestWatcher
+WithParameterSupplierXXX->ParameterSupplier
+WithParameterSupplierXXX->PotentialAssignment
+JUnit38ClassRunnerTestXXX->Filter
+JUnit38ClassRunnerTestXXX->RunListener
+JUnit38ClassRunnerTestXXX->TestCase
+JUnit38ClassRunnerTestXXX->JUnit38ClassRunnerTestXXX
+LoggingMethodRule->MethodRule
+BlockJUnit4ClassRunnerOverrideTestXXX->BlockJUnit4ClassRunnerOverrideTestXXX
+BlockJUnit4ClassRunnerOverrideTestXXX->BlockJUnit4ClassRunner
+BlockJUnit4ClassRunnerOverrideTestXXX->MethodRule
+TestListenerTest->TestListener
+TestListenerTest->TestCase
+ParallelComputerXXX->RunnerScheduler
+ParentRunnerClassLoaderTestXXX->BlockJUnit4ClassRunner
+Theories->Statement
+Theories->BlockJUnit4ClassRunner
+JUnit38ClassRunnerXXX->TestListener
+FilterableTestXXX->Parameterized
+FilterXXX->Filter
+ComputerXXX->Suite
+ComputerXXX->RunnerBuilder
+AllTests->SuiteMethod
+BlockJUnit4ClassRunner->ParentRunner
+BlockJUnit4ClassRunner->Describable
+JUnit4TestAdapter->Filterable
+JUnit4TestAdapter->Describable
+JUnit4TestAdapter->Test
+JUnit4TestAdapter->Sortable
+RuleMemberValidatorTest->MethodRule
+StubbedTheoriesXXX->TheoriesXXX
+ClassLevelMethodsWithIgnoredTestsTestXXX->TestRule
+ReguessableValue->PotentialAssignment
+BlockJUnit4ClassRunnerOverrideTest->Statement
+BlockJUnit4ClassRunnerOverrideTest->TestRule
+TheoriesXXX->Statement
+ActiveTestSuite->TestSuite
+JUnit38ClassRunner->Filterable
+JUnit38ClassRunner->Runner
+JUnit38ClassRunner->Sortable
+TestSuite->Test
+JUnit4ClassRunner->Filterable
+JUnit4ClassRunner->Runner
+JUnit4ClassRunner->Sortable
+FilterableTest->Filter
+NullBuilder->RunnerBuilder
+DisableOnDebug->TestRule
+RunnerSpy->Runner
+TestSetupXXX->Protectable
+UseSuiteAsASuperclassTestXXX->Suite
+Parameterized->Suite
+ClassRequestXXX->AllDefaultPossibilitiesBuilder
+ClassRequestXXX->SuiteMethodBuilder
+RunWithTestXXX->Runner
+RunWithTestXXX->RunWithTestXXX
+TestedOnSupplier->ParameterSupplier
+IncludeCategoriesXXX->CategoriesXXX
+PotentialAssignmentXXX->PotentialAssignment
+RepeatedTest->TestDecorator
+RuleChainTestXXX->TestWatcher
+Timeout->TestRule
+BlockJUnit4ClassRunnerWithParametersFactory->ParametersRunnerFactory
+GuesserQueueXXX->ReguessableValue
+MaxCore->Suite
+Categories->Suite
+ExpectExceptionTestXXX->Statement
+ExpectExceptionTestXXX->AssumptionViolatedException
+JUnit3Builder->RunnerBuilder
+ExcludeCategoriesXXX->CategoriesXXX
+AllDefaultPossibilitiesBuilder->RunnerBuilder
+Enclosed->Suite
+SuiteMethodBuilder->RunnerBuilder
+Verifier->TestRule
+TestWatchman->MethodRule
+CategoryFilterFactoryTestXXX->Filter
+CategoryFilterFactoryTestXXX->CategoryFilterFactory
+TestWithClassRuleXXX->TestRule
+ExcludeCategories->CategoryFilterFactory
+CategoryFilterFactory->FilterFactory
+EnumSupplier->ParameterSupplier
+RunAfters->Statement
+TestCase->Assert
+TestCase->Test
+Stopwatch->TestRule
+RuleChain->TestRule
+FilterTestXXX->Filter
+AllMembersSupplierXXX->PotentialAssignment
+BaseTestRunner->TestListener
+SpecificDataPointsSupplier->AllMembersSupplier
+RunBefores->Statement
+RunnerBuilderStub->RunnerBuilder
+OneTestCase->TestCase
+JUnit4->Filterable
+JUnit4->BlockJUnit4ClassRunner
+JUnit4->Sortable
+TestName->TestWatcher
+TestSetup->TestDecorator
+OverrideTestCase->Test
+OverrideTestCase->OneTestCase
+BlockJUnit4ClassRunnerWithParameters->Filterable
+BlockJUnit4ClassRunnerWithParameters->BlockJUnit4ClassRunner
+BlockJUnit4ClassRunnerWithParameters->Sortable
+AnnotatedBuilder->RunnerBuilder
+JUnit4TestCaseFacade->Describable
+JUnit4TestCaseFacade->Test
+TestRunner->BaseTestRunner
+TestWatcher->TestRule
+IgnoredClassRunner->Runner
+ErrorReportingRunner->Runner
+LoggingTestRule->TestRule
+TestDecorator->Assert
+TestDecorator->Test
+AllMembersSupplier->ParameterSupplier
+Suite->ParentRunner
+Suite->Describable
+SuiteMethod->Describable
+SuiteMethod->JUnit38ClassRunner
+StubbedTheories->Filterable
+StubbedTheories->Theories
+StubbedTheories->Describable
+StubbedTheories->Sortable
+ResultPrinter->TestListener
+ErrorCollector->Verifier
+LoggingTestWatcher->TestWatcher
+BooleanSupplier->ParameterSupplier
+edge [arrowhead = "normal"]
+Guesser->Guesser
+AnnotatedBuilderTestXXX->RunnerSpy
+ExtensionTestXXX->TestDecorator
+InheritedTestCase->TestCase
+BaseTestRunnerTestXXX->BaseTestRunner
+StackTracesTestXXX->TestCase
+TextFeedbackTestXXX->TestCase
+IgnoredBuilder->RunnerBuilder
+Filter->Filter
+CategoriesXXX->Filter
+ExpectedException->ExpectedException
+AssumptionViolatedException->AssumptionViolatedException
+CustomBlockJUnit4ClassRunnerTestXXX->BlockJUnit4ClassRunner
+CustomBlockJUnit4ClassRunnerTestXXX->ParentRunner
+JUnit4Builder->RunnerBuilder
+FilterFactoriesTestXXX->Filter
+BlockJUnit4ClassRunnerWithParametersXXX->RunBefores
+TemporaryFolder->TemporaryFolder
+ParentRunner->ParentRunner
+JUnit38ClassRunnerTestXXX->TestCase
+LoggingMethodRule->LoggingMethodRule
+TestListenerTest->TestListenerTest
+ParentRunnerClassLoaderTestXXX->BlockJUnit4ClassRunner
+ParentRunnerClassLoaderTestXXX->ParentRunner
+Theories->BlockJUnit4ClassRunner
+Theories->ParentRunner
+FilterXXX->Filter
+ComputerXXX->RunnerBuilder
+BlockJUnit4ClassRunner->BlockJUnit4ClassRunner
+BlockJUnit4ClassRunner->ParentRunner
+JUnit4TestAdapter->JUnit4TestAdapter
+ActiveTestSuite->ActiveTestSuite
+ActiveTestSuite->TestSuite
+JUnit38ClassRunner->JUnit38ClassRunner
+TestSuite->TestSuite
+JUnit4ClassRunner->JUnit4ClassRunner
+FilterableTest->Filter
+NullBuilder->RunnerBuilder
+DisableOnDebug->DisableOnDebug
+RunnerSpy->RunnerSpy
+Parameterized->Suite
+Parameterized->ParentRunner
+ClassRequestXXX->RunnerBuilder
+IncludeCategoriesXXX->Filter
+RepeatedTest->RepeatedTest
+RepeatedTest->TestDecorator
+Timeout->Timeout
+MaxCore->MaxCore
+Categories->Suite
+Categories->ParentRunner
+JUnit3Builder->RunnerBuilder
+ExcludeCategoriesXXX->Filter
+AllDefaultPossibilitiesBuilder->AllDefaultPossibilitiesBuilder
+AllDefaultPossibilitiesBuilder->RunnerBuilder
+Enclosed->Suite
+Enclosed->ParentRunner
+SuiteMethodBuilder->RunnerBuilder
+EnumSupplier->EnumSupplier
+RunAfters->RunAfters
+TestCase->TestCase
+Stopwatch->Stopwatch
+RuleChain->RuleChain
+FilterTestXXX->Filter
+BaseTestRunner->BaseTestRunner
+SpecificDataPointsSupplier->AllMembersSupplier
+RunBefores->RunBefores
+RunnerBuilderStub->RunnerBuilder
+OneTestCase->TestCase
+JUnit4->BlockJUnit4ClassRunner
+JUnit4->ParentRunner
+TestName->TestName
+TestSetup->TestDecorator
+OverrideTestCase->TestCase
+BlockJUnit4ClassRunnerWithParameters->BlockJUnit4ClassRunnerWithParameters
+BlockJUnit4ClassRunnerWithParameters->BlockJUnit4ClassRunner
+BlockJUnit4ClassRunnerWithParameters->ParentRunner
+AnnotatedBuilder->AnnotatedBuilder
+AnnotatedBuilder->RunnerBuilder
+JUnit4TestCaseFacade->JUnit4TestCaseFacade
+TestRunner->TestRunner
+TestRunner->BaseTestRunner
+IgnoredClassRunner->IgnoredClassRunner
+ErrorReportingRunner->ErrorReportingRunner
+LoggingTestRule->LoggingTestRule
+TestDecorator->TestDecorator
+AllMembersSupplier->AllMembersSupplier
+Suite->Suite
+Suite->ParentRunner
+RunnerBuilder->RunnerBuilder
+SuiteMethod->JUnit38ClassRunner
+StubbedTheories->BlockJUnit4ClassRunner
+StubbedTheories->ParentRunner
+ResultPrinter->ResultPrinter
+ErrorCollector->ErrorCollector
+LoggingTestWatcher->LoggingTestWatcher
+}

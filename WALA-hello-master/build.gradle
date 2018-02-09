@@ -1,0 +1,40 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.8
+version = '0.1'
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Hello World',
+                   'Implementation-Version': 0.01
+    }
+}
+
+repositories {
+    mavenCentral()
+    // uncomment if you want to use wala.dalvik or wala.scandroid
+    //maven { url "https://raw.github.com/msridhar/maven-jars/mvn-repo/" }
+}
+
+dependencies {
+    //compile 'org.apache.httpcomponents:httpclient'
+
+    compile group: 'com.ibm.wala', name: 'com.ibm.wala.shrike', version: '1.4.3'
+    compile group: 'com.ibm.wala', name: 'com.ibm.wala.util', version: '1.4.3'
+    compile group: 'com.ibm.wala', name: 'com.ibm.wala.core', version: '1.4.3'
+    compile group: 'com.ibm.wala', name: 'com.ibm.wala.cast', version: '1.4.3'
+    compile group: 'com.ibm.wala', name: 'com.ibm.wala.cast.js', version: '1.4.3'
+    compile group: 'com.ibm.wala', name: 'com.ibm.wala.cast.js.rhino', version: '1.4.3'
+    compile group: 'com.ibm.wala', name: 'com.ibm.wala.cast.java', version: '1.4.3'
+    compile group: 'com.ibm.wala', name: 'com.ibm.wala.cast.java.ecj', version: '1.4.3'
+    // uncomment to use wala.dalvik or wala.scandroid
+    //compile group: 'com.ibm.wala', name: 'com.ibm.wala.dalvik', version: '1.4.3'
+    //compile group: 'com.ibm.wala', name: 'com.ibm.wala.scandroid', version: '1.4.3'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+task execute(type:JavaExec) {
+    main = "com.polymtl.hello.Main"
+    classpath = sourceSets.main.runtimeClasspath
+}

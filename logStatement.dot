@@ -1,0 +1,53 @@
+digraph G{
+fontname = "Bitstream Vera Sans"
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+node [
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+shape = "record"
+]
+edge [
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+]
+ExpectException[label="{ExpectException|+  next : ExpectException\l+  expected : ExpectException\l|+  init() : void\l+  evaluate() : void\l}"]
+FailOnTimeoutTestXXX[label="{FailOnTimeoutTestXXX|+  waitDuration : FailOnTimeoutTest$TestStatement\l+  nextException : FailOnTimeoutTest$TestStatement\l|+  init() : void\l+  evaluate() : void\l}"]
+ExpectedExceptionXXX[label="{ExpectedExceptionXXX|+  next : ExpectedException$ExpectedExceptionStatement\l+  this$0 : ExpectedException$ExpectedExceptionStatement\l|+  init() : void\l+  evaluate() : void\l}"]
+Statement[label="{Statement||+  init() : void\l+  evaluate() : void\l}"]
+InvokeMethod[label="{InvokeMethod|+  testMethod : InvokeMethod\l+  target : InvokeMethod\l|+  init() : void\l+  evaluate() : void\l}"]
+TestWithClassRule[label="{TestWithClassRule|+  val$description : TestWithClassRule$CustomRule$1\l+  val$base : TestWithClassRule$CustomRule$1\l+  this$0 : TestWithClassRule$CustomRule$1\l|+  init() : void\l+  evaluate() : void\l}"]
+TimeoutXXX[label="{TimeoutXXX|+  lookForStuckThread : Timeout$Builder\l+  timeout : Timeout$Builder\l+  timeUnit : Timeout$Builder\l|+  init() : void\l+  withTimeout() : Timeout$Builder\l+  getTimeout() : J\l+  getTimeUnit() : TimeUnit\l+  withLookingForStuckThread() : Timeout$Builder\l+  getLookingForStuckThread() : Z\l+  build() : Timeout\l}"]
+RunRules[label="{RunRules|+  statement : RunRules\l|+  init() : void\l+  evaluate() : void\l+  applyAll() : Statement\l}"]
+VerifierXXX[label="{VerifierXXX|+  val$base : Verifier$1\l+  this$0 : Verifier$1\l|+  init() : void\l+  evaluate() : void\l}"]
+FailOnTimeout[label="{FailOnTimeout|+  originalStatement : FailOnTimeout\l+  timeUnit : FailOnTimeout\l+  timeout : FailOnTimeout\l+  lookForStuckThread : FailOnTimeout\l|+  builder() : FailOnTimeout$Builder\l+  init() : void\l+  evaluate() : void\l+  getResult() : Throwable\l+  createTimeoutException() : Exception\l+  getStackTrace() : StackTraceElement\l+  getStuckThread() : Thread\l+  getThreadsInGroup() : List\l+  cpuTime() : J\l+  access600() : Statement\l}"]
+Fail[label="{Fail|+  error : Fail\l|+  init() : void\l+  evaluate() : void\l}"]
+DisableOnDebugTest[label="{DisableOnDebugTest|+  this$0 : DisableOnDebugTest$FailOnExecution$1\l|+  init() : void\l+  evaluate() : void\l}"]
+LoggingStatement[label="{LoggingStatement|+  base : LoggingStatement\l+  log : LoggingStatement\l+  name : LoggingStatement\l|+  init() : void\l+  evaluate() : void\l}"]
+TestWatcherXXX[label="{TestWatcherXXX|+  val$description : TestWatcher$1\l+  val$base : TestWatcher$1\l+  this$0 : TestWatcher$1\l|+  init() : void\l+  evaluate() : void\l}"]
+ExternalResourceXXX[label="{ExternalResourceXXX|+  val$base : ExternalResource$1\l+  this$0 : ExternalResource$1\l|+  init() : void\l+  evaluate() : void\l}"]
+TestWatchmanXXX[label="{TestWatchmanXXX|+  val$method : TestWatchman$1\l+  val$base : TestWatchman$1\l+  this$0 : TestWatchman$1\l|+  init() : void\l+  evaluate() : void\l}"]
+edge [arrowhead = "empty"]
+ExpectException->Statement
+FailOnTimeoutTestXXX->Statement
+ExpectedExceptionXXX->Statement
+InvokeMethod->Statement
+TestWithClassRule->Statement
+TimeoutXXX->Statement
+RunRules->Statement
+VerifierXXX->Statement
+FailOnTimeout->Statement
+Fail->Statement
+DisableOnDebugTest->Statement
+LoggingStatement->Statement
+TestWatcherXXX->Statement
+ExternalResourceXXX->Statement
+TestWatchmanXXX->Statement
+edge [arrowhead = "normal"]
+ExpectException->ExpectException
+InvokeMethod->InvokeMethod
+RunRules->RunRules
+FailOnTimeout->FailOnTimeout
+Fail->Fail
+LoggingStatement->LoggingStatement
+}

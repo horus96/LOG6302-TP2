@@ -1,0 +1,48 @@
+digraph G{
+fontname = "Bitstream Vera Sans"
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+node [
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+shape = "record"
+]
+edge [
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+]
+BlockJUnit4ClassRunnerTestXXX[label="{BlockJUnit4ClassRunnerTestXXX||+  init() : void\l+  test() : void\l}"]
+AssumptionTestXXX[label="{AssumptionTestXXX||+  init() : void\l+  checkForSomethingThatIsntThere() : void\l+  failing() : void\l}"]
+SynchronizedRunListenerTestXXX[label="{SynchronizedRunListenerTestXXX|+  fName : SynchronizedRunListenerTest$NamedListener\l|+  init() : void\l+  toString() : String\l+  hashCode() : I\l+  equals() : Z\l}"]
+FilterOptionIntegrationTestXXX[label="{FilterOptionIntegrationTestXXX||}"]
+RunListener[label="{RunListener||+  init() : void\l+  testRunStarted() : void\l+  testRunFinished() : void\l+  testSuiteStarted() : void\l+  testSuiteFinished() : void\l+  testStarted() : void\l+  testFinished() : void\l+  testFailure() : void\l+  testAssumptionFailure() : void\l+  testIgnored() : void\l}"]
+ListenerTestXXX[label="{ListenerTestXXX|+  this$0 : ListenerTest$1\l|+  init() : void\l+  testRunStarted() : void\l}"]
+RunNotifierTestXXX[label="{RunNotifierTestXXX|+  fTestStarted : RunNotifierTest$CountingListener\l|+  init() : void\l+  testStarted() : void\l}"]
+ConcurrentRunNotifierTestXXX[label="{ConcurrentRunNotifierTestXXX|+  fTestStarted : ConcurrentRunNotifierTest$ConcurrentRunListener\l|+  init() : void\l+  testStarted() : void\l}"]
+MaxHistoryXXX[label="{MaxHistoryXXX|+  this$0 : MaxHistory$TestComparator\l|+  init() : void\l+  compare() : I\l+  getFailure() : Long\l}"]
+ResultXXX[label="{ResultXXX||}"]
+EventCollector[label="{EventCollector|+  fTestRunsStarted : EventCollector\l+  fTestRunsFinished : EventCollector\l+  fTestsStarted : EventCollector\l+  fTestsFinished : EventCollector\l+  fFailures : EventCollector\l+  fAssumptionFailures : EventCollector\l+  fTestsIgnored : EventCollector\l|+  init() : void\l+  everyTestRunSuccessful() : Matcher\l+  hasNumberOfFailures() : Matcher\l+  hasSingleFailure() : Matcher\l+  hasNoFailure() : Matcher\l+  hasNumberOfAssumptionFailures() : Matcher\l+  hasSingleAssumptionFailure() : Matcher\l+  hasNoAssumptionFailure() : Matcher\l+  hasSingleFailureWithMessage() : Matcher\l+  failureIs() : Matcher\l+  testRunStarted() : void\l+  testRunFinished() : void\l+  testStarted() : void\l+  testFinished() : void\l+  testFailure() : void\l+  testAssumptionFailure() : void\l+  testIgnored() : void\l+  toString() : String\l+  access000() : List\l+  access100() : List\l}"]
+JUnit4TestAdapterCacheXXX[label="{JUnit4TestAdapterCacheXXX|+  val$result : JUnit4TestAdapterCache$1\l+  this$0 : JUnit4TestAdapterCache$1\l|+  init() : void\l+  testFailure() : void\l+  testFinished() : void\l+  testStarted() : void\l}"]
+SynchronizedRunListener[label="{SynchronizedRunListener|+  listener : SynchronizedRunListener\l+  monitor : SynchronizedRunListener\l|+  init() : void\l+  testRunStarted() : void\l+  testRunFinished() : void\l+  testSuiteStarted() : void\l+  testSuiteFinished() : void\l+  testStarted() : void\l+  testFinished() : void\l+  testFailure() : void\l+  testAssumptionFailure() : void\l+  testIgnored() : void\l+  hashCode() : I\l+  equals() : Z\l+  toString() : String\l}"]
+TextListener[label="{TextListener|+  writer : TextListener\l|+  init() : void\l+  testRunFinished() : void\l+  testStarted() : void\l+  testFailure() : void\l+  testIgnored() : void\l+  getWriter() : PrintStream\l+  printHeader() : void\l+  printFailures() : void\l+  printFailure() : void\l+  printFooter() : void\l+  elapsedTimeAsString() : String\l}"]
+edge [arrowhead = "empty"]
+BlockJUnit4ClassRunnerTestXXX->RunListener
+AssumptionTestXXX->RunListener
+SynchronizedRunListenerTestXXX->RunListener
+FilterOptionIntegrationTestXXX->RunListener
+ListenerTestXXX->RunListener
+RunNotifierTestXXX->RunListener
+RunNotifierTestXXX->RunNotifierTestXXX
+ConcurrentRunNotifierTestXXX->RunListener
+ConcurrentRunNotifierTestXXX->ConcurrentRunNotifierTestXXX
+MaxHistoryXXX->RunListener
+ResultXXX->RunListener
+EventCollector->RunListener
+JUnit4TestAdapterCacheXXX->RunListener
+SynchronizedRunListener->RunListener
+TextListener->RunListener
+edge [arrowhead = "normal"]
+EventCollector->EventCollector
+SynchronizedRunListener->SynchronizedRunListener
+TextListener->TextListener
+}
