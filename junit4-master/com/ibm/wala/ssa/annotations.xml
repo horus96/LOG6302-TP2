@@ -1,0 +1,5 @@
+<root>
+    <item name='com.ibm.wala.ssa.IRFactory com.ibm.wala.ssa.IR makeIR(T, com.ibm.wala.ipa.callgraph.Context, com.ibm.wala.ssa.SSAOptions)'>
+        <annotation name='org.jetbrains.annotations.NotNull'/>
+    </item>
+</root>
