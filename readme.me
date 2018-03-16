@@ -1,0 +1,27 @@
+WALA-hello-master project :
+-> doc.xml
+(imprime le cfg en format xml)
+
+
+xmlcleaner :
+doc.xml -> cleancfg.xml
+(cfg abrégé en format xml)
+
+
+cfgprinter :
+doc.xml -> cfg.dot
+(affiche le cfg depuis le cfg)
+
+
+newcfgprinter :
+newcfg.xml -> newcfg.dot
+(affiche le cfg depuis le cfg abrégé)
+
+
+defVal :
+cleancfg.xml -> defVar.dot, defVar.txt
+(affiche le cfg annoté des ensembles gen, kill, in et out)
+
+domPostdom :
+cleancfg.xml -> dom.dot, postdom.dot
+(affiche les arbres de dominateurs et postdominateurs)

@@ -1,0 +1,422 @@
+<projet>
+  <bloc name="ExplodedBlock[0](entry:&lt; Application, Lmain, wordcount()[I &gt;)" id="0">
+    <parameter>
+      <def id="1"/>
+    </parameter>
+    <constant>
+      <def id="3" value="1"/>
+      <def id="4" value="0"/>
+      <def id="16" value="10"/>
+      <def id="21" value="9"/>
+      <def id="23" value="32"/>
+      <def id="29" value="3"/>
+      <def id="36" value="2"/>
+    </constant>
+    <edge target="ExplodedBlock[3](original:BB[SSA:0..2]1 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)" id="1"/>
+  <bloc name="ExplodedBlock[3](original:BB[SSA:0..2]1 - main.wordcount()[I)" id="2">
+    <ssa instruction="putfield 1.&lt; Application, Lmain, nl, &lt;Primordial,I&gt; &gt; = 3">
+      <use id="1"/>
+      <use id="3"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[6](original:BB[SSA:3..5]2 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[6](original:BB[SSA:3..5]2 - main.wordcount()[I)" id="3">
+    <ssa instruction="putfield 1.&lt; Application, Lmain, nw, &lt;Primordial,I&gt; &gt; = 3">
+      <use id="1"/>
+      <use id="3"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[9](original:BB[SSA:6..8]3 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[9](original:BB[SSA:6..8]3 - main.wordcount()[I)" id="4">
+    <ssa instruction="putfield 1.&lt; Application, Lmain, nc, &lt;Primordial,I&gt; &gt; = 3">
+      <use id="1"/>
+      <use id="3"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[12](original:BB[SSA:9..11]4 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[12](original:BB[SSA:9..11]4 - main.wordcount()[I)" id="5">
+    <ssa instruction="putfield 1.&lt; Application, Lmain, indent, &lt;Primordial,I&gt; &gt; = 4">
+      <use id="1"/>
+      <use id="4"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[14](original:BB[SSA:12..13]5 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[14](original:BB[SSA:12..13]5 - main.wordcount()[I)" id="6">
+    <ssa instruction="5 = getfield &lt; Application, Lmain, indent, &lt;Primordial,I&gt; &gt; 1">
+      <def id="5"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[16](original:BB[SSA:14..15]6 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[16](original:BB[SSA:14..15]6 - main.wordcount()[I)" id="7">
+    <ssa instruction="6 = getfield &lt; Application, Lmain, chaine, &lt;Application,Ljava/lang/String&gt; &gt; 1">
+      <def id="6"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[17](original:BB[SSA:16..16]7 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[17](original:BB[SSA:16..16]7 - main.wordcount()[I)" id="8">
+    <ssa instruction="8 = invokevirtual &lt; Application, Ljava/lang/String, length()I &gt; 6 @28 exception:7">
+      <def id="8"/>
+      <def id="7"/>
+      <use id="6"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[18](original:BB[SSA:17..17]8 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[18](original:BB[SSA:17..17]8 - main.wordcount()[I)" id="9">
+    <ssa instruction="conditional branch(ge, to iindex=77) 5,8">
+      <use id="5"/>
+      <use id="8"/>
+    </ssa>
+    <edge target="ExplodedBlock[21](original:BB[SSA:18..20]9 - main.wordcount()[I)"/>
+    <edge target="ExplodedBlock[80](original:BB[SSA:77..79]35 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[21](original:BB[SSA:18..20]9 - main.wordcount()[I)" id="10">
+    <ssa instruction="9 = getfield &lt; Application, Lmain, chaine, &lt;Application,Ljava/lang/String&gt; &gt; 1">
+      <def id="9"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[23](original:BB[SSA:21..22]10 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[23](original:BB[SSA:21..22]10 - main.wordcount()[I)" id="11">
+    <ssa instruction="10 = getfield &lt; Application, Lmain, indent, &lt;Primordial,I&gt; &gt; 1">
+      <def id="10"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[24](original:BB[SSA:23..23]11 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[24](original:BB[SSA:23..23]11 - main.wordcount()[I)" id="12">
+    <ssa instruction="12 = invokevirtual &lt; Application, Ljava/lang/String, charAt(I)C &gt; 9,10 @43 exception:11">
+      <def id="12"/>
+      <def id="11"/>
+      <use id="9"/>
+      <use id="10"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[25](original:BB[SSA:24..24]12 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[25](original:BB[SSA:24..24]12 - main.wordcount()[I)" id="13">
+    <ssa instruction="putfield 1.&lt; Application, Lmain, c, &lt;Primordial,C&gt; &gt; = 12">
+      <use id="1"/>
+      <use id="12"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[28](original:BB[SSA:25..27]13 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[28](original:BB[SSA:25..27]13 - main.wordcount()[I)" id="14">
+    <ssa instruction="13 = getfield &lt; Application, Lmain, nc, &lt;Primordial,I&gt; &gt; 1">
+      <def id="13"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[30](original:BB[SSA:28..30]14 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[30](original:BB[SSA:28..30]14 - main.wordcount()[I)" id="15">
+    <ssa instruction="14 = binaryop(add) 13 , 3">
+      <def id="14"/>
+      <use id="13"/>
+      <use id="3"/>
+    </ssa>
+    <edge target="ExplodedBlock[31](original:BB[SSA:28..30]14 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[31](original:BB[SSA:28..30]14 - main.wordcount()[I)" id="16">
+    <ssa instruction="putfield 1.&lt; Application, Lmain, nc, &lt;Primordial,I&gt; &gt; = 14">
+      <use id="1"/>
+      <use id="14"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[33](original:BB[SSA:31..32]15 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[33](original:BB[SSA:31..32]15 - main.wordcount()[I)" id="17">
+    <ssa instruction="15 = getfield &lt; Application, Lmain, c, &lt;Primordial,C&gt; &gt; 1">
+      <def id="15"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[35](original:BB[SSA:33..34]16 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[35](original:BB[SSA:33..34]16 - main.wordcount()[I)" id="18">
+    <ssa instruction="conditional branch(ne, to iindex=41) 15,16">
+      <use id="15"/>
+      <use id="16"/>
+    </ssa>
+    <edge target="ExplodedBlock[38](original:BB[SSA:35..37]17 - main.wordcount()[I)"/>
+    <edge target="ExplodedBlock[43](original:BB[SSA:41..42]19 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[38](original:BB[SSA:35..37]17 - main.wordcount()[I)" id="19">
+    <ssa instruction="17 = getfield &lt; Application, Lmain, nl, &lt;Primordial,I&gt; &gt; 1">
+      <def id="17"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[40](original:BB[SSA:38..40]18 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[40](original:BB[SSA:38..40]18 - main.wordcount()[I)" id="20">
+    <ssa instruction="18 = binaryop(add) 17 , 3">
+      <def id="18"/>
+      <use id="17"/>
+      <use id="3"/>
+    </ssa>
+    <edge target="ExplodedBlock[41](original:BB[SSA:38..40]18 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[41](original:BB[SSA:38..40]18 - main.wordcount()[I)" id="21">
+    <ssa instruction="putfield 1.&lt; Application, Lmain, nl, &lt;Primordial,I&gt; &gt; = 18">
+      <use id="1"/>
+      <use id="18"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[43](original:BB[SSA:41..42]19 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[43](original:BB[SSA:41..42]19 - main.wordcount()[I)" id="22">
+    <ssa instruction="19 = getfield &lt; Application, Lmain, c, &lt;Primordial,C&gt; &gt; 1">
+      <def id="19"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[45](original:BB[SSA:43..44]20 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[45](original:BB[SSA:43..44]20 - main.wordcount()[I)" id="23">
+    <ssa instruction="conditional branch(eq, to iindex=53) 19,16">
+      <use id="19"/>
+      <use id="16"/>
+    </ssa>
+    <edge target="ExplodedBlock[47](original:BB[SSA:45..46]21 - main.wordcount()[I)"/>
+    <edge target="ExplodedBlock[55](original:BB[SSA:53..54]25 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[47](original:BB[SSA:45..46]21 - main.wordcount()[I)" id="24">
+    <ssa instruction="20 = getfield &lt; Application, Lmain, c, &lt;Primordial,C&gt; &gt; 1">
+      <def id="20"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[49](original:BB[SSA:47..48]22 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[49](original:BB[SSA:47..48]22 - main.wordcount()[I)" id="25">
+    <ssa instruction="conditional branch(eq, to iindex=53) 20,21">
+      <use id="20"/>
+      <use id="21"/>
+    </ssa>
+    <edge target="ExplodedBlock[51](original:BB[SSA:49..50]23 - main.wordcount()[I)"/>
+    <edge target="ExplodedBlock[55](original:BB[SSA:53..54]25 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[51](original:BB[SSA:49..50]23 - main.wordcount()[I)" id="26">
+    <ssa instruction="22 = getfield &lt; Application, Lmain, c, &lt;Primordial,C&gt; &gt; 1">
+      <def id="22"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[53](original:BB[SSA:51..52]24 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[53](original:BB[SSA:51..52]24 - main.wordcount()[I)" id="27">
+    <ssa instruction="conditional branch(ne, to iindex=67) 22,23">
+      <use id="22"/>
+      <use id="23"/>
+    </ssa>
+    <edge target="ExplodedBlock[55](original:BB[SSA:53..54]25 - main.wordcount()[I)"/>
+    <edge target="ExplodedBlock[70](original:BB[SSA:67..69]31 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[55](original:BB[SSA:53..54]25 - main.wordcount()[I)" id="28">
+    <ssa instruction="24 = getfield &lt; Application, Lmain, inword, &lt;Primordial,Z&gt; &gt; 1">
+      <def id="24"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[57](original:BB[SSA:55..56]26 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[57](original:BB[SSA:55..56]26 - main.wordcount()[I)" id="29">
+    <ssa instruction="conditional branch(ne, to iindex=70) 24,4">
+      <use id="24"/>
+      <use id="4"/>
+    </ssa>
+    <edge target="ExplodedBlock[60](original:BB[SSA:57..59]27 - main.wordcount()[I)"/>
+    <edge target="ExplodedBlock[73](original:BB[SSA:70..72]32 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[60](original:BB[SSA:57..59]27 - main.wordcount()[I)" id="30">
+    <ssa instruction="putfield 1.&lt; Application, Lmain, inword, &lt;Primordial,Z&gt; &gt; = 3">
+      <use id="1"/>
+      <use id="3"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[63](original:BB[SSA:60..62]28 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[63](original:BB[SSA:60..62]28 - main.wordcount()[I)" id="31">
+    <ssa instruction="25 = getfield &lt; Application, Lmain, nw, &lt;Primordial,I&gt; &gt; 1">
+      <def id="25"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[65](original:BB[SSA:63..65]29 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[65](original:BB[SSA:63..65]29 - main.wordcount()[I)" id="32">
+    <ssa instruction="26 = binaryop(add) 25 , 3">
+      <def id="26"/>
+      <use id="25"/>
+      <use id="3"/>
+    </ssa>
+    <edge target="ExplodedBlock[66](original:BB[SSA:63..65]29 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[66](original:BB[SSA:63..65]29 - main.wordcount()[I)" id="33">
+    <ssa instruction="putfield 1.&lt; Application, Lmain, nw, &lt;Primordial,I&gt; &gt; = 26">
+      <use id="1"/>
+      <use id="26"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[67](original:BB[SSA:66..66]30 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[67](original:BB[SSA:66..66]30 - main.wordcount()[I)" id="34">
+    <ssa instruction="goto (from iindex= 66 to iindex = 70)"/>
+    <edge target="ExplodedBlock[73](original:BB[SSA:70..72]32 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[70](original:BB[SSA:67..69]31 - main.wordcount()[I)" id="35">
+    <ssa instruction="putfield 1.&lt; Application, Lmain, inword, &lt;Primordial,Z&gt; &gt; = 4">
+      <use id="1"/>
+      <use id="4"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[73](original:BB[SSA:70..72]32 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[73](original:BB[SSA:70..72]32 - main.wordcount()[I)" id="36">
+    <ssa instruction="27 = getfield &lt; Application, Lmain, indent, &lt;Primordial,I&gt; &gt; 1">
+      <def id="27"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[75](original:BB[SSA:73..75]33 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[75](original:BB[SSA:73..75]33 - main.wordcount()[I)" id="37">
+    <ssa instruction="28 = binaryop(add) 27 , 3">
+      <def id="28"/>
+      <use id="27"/>
+      <use id="3"/>
+    </ssa>
+    <edge target="ExplodedBlock[76](original:BB[SSA:73..75]33 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[76](original:BB[SSA:73..75]33 - main.wordcount()[I)" id="38">
+    <ssa instruction="putfield 1.&lt; Application, Lmain, indent, &lt;Primordial,I&gt; &gt; = 28">
+      <use id="1"/>
+      <use id="28"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[77](original:BB[SSA:76..76]34 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[77](original:BB[SSA:76..76]34 - main.wordcount()[I)" id="39">
+    <ssa instruction="goto (from iindex= 76 to iindex = 12)"/>
+    <edge target="ExplodedBlock[14](original:BB[SSA:12..13]5 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[80](original:BB[SSA:77..79]35 - main.wordcount()[I)" id="40">
+    <ssa instruction="30 = new &lt;Primordial,[I&gt;@15029 ">
+      <def id="30"/>
+      <use id="29"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[81](original:BB[SSA:80..80]36 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[81](original:BB[SSA:80..80]36 - main.wordcount()[I)" id="41">
+    <ssa instruction="putfield 1.&lt; Application, Lmain, s, &lt;Primordial,[I&gt; &gt; = 30">
+      <use id="1"/>
+      <use id="30"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[83](original:BB[SSA:81..82]37 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[83](original:BB[SSA:81..82]37 - main.wordcount()[I)" id="42">
+    <ssa instruction="31 = getfield &lt; Application, Lmain, s, &lt;Primordial,[I&gt; &gt; 1">
+      <def id="31"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[86](original:BB[SSA:83..85]38 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[86](original:BB[SSA:83..85]38 - main.wordcount()[I)" id="43">
+    <ssa instruction="32 = getfield &lt; Application, Lmain, nl, &lt;Primordial,I&gt; &gt; 1">
+      <def id="32"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[87](original:BB[SSA:86..86]39 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[87](original:BB[SSA:86..86]39 - main.wordcount()[I)" id="44">
+    <ssa instruction="arraystore 31[4] = 32">
+      <use id="31"/>
+      <use id="4"/>
+      <use id="32"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[89](original:BB[SSA:87..88]40 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[89](original:BB[SSA:87..88]40 - main.wordcount()[I)" id="45">
+    <ssa instruction="33 = getfield &lt; Application, Lmain, s, &lt;Primordial,[I&gt; &gt; 1">
+      <def id="33"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[92](original:BB[SSA:89..91]41 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[92](original:BB[SSA:89..91]41 - main.wordcount()[I)" id="46">
+    <ssa instruction="34 = getfield &lt; Application, Lmain, nw, &lt;Primordial,I&gt; &gt; 1">
+      <def id="34"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[93](original:BB[SSA:92..92]42 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[93](original:BB[SSA:92..92]42 - main.wordcount()[I)" id="47">
+    <ssa instruction="arraystore 33[3] = 34">
+      <use id="33"/>
+      <use id="3"/>
+      <use id="34"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[95](original:BB[SSA:93..94]43 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[95](original:BB[SSA:93..94]43 - main.wordcount()[I)" id="48">
+    <ssa instruction="35 = getfield &lt; Application, Lmain, s, &lt;Primordial,[I&gt; &gt; 1">
+      <def id="35"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[98](original:BB[SSA:95..97]44 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[98](original:BB[SSA:95..97]44 - main.wordcount()[I)" id="49">
+    <ssa instruction="37 = getfield &lt; Application, Lmain, nc, &lt;Primordial,I&gt; &gt; 1">
+      <def id="37"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[99](original:BB[SSA:98..98]45 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[99](original:BB[SSA:98..98]45 - main.wordcount()[I)" id="50">
+    <ssa instruction="arraystore 35[36] = 37">
+      <use id="35"/>
+      <use id="36"/>
+      <use id="37"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[101](original:BB[SSA:99..100]46 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[101](original:BB[SSA:99..100]46 - main.wordcount()[I)" id="51">
+    <ssa instruction="38 = getfield &lt; Application, Lmain, s, &lt;Primordial,[I&gt; &gt; 1">
+      <def id="38"/>
+      <use id="1"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+    <edge target="ExplodedBlock[102](original:BB[SSA:101..101]47 - main.wordcount()[I)"/>
+  </bloc>
+  <bloc name="ExplodedBlock[102](original:BB[SSA:101..101]47 - main.wordcount()[I)" id="52">
+    <ssa instruction="return 38">
+      <use id="38"/>
+    </ssa>
+    <edge target="ExplodedBlock[103](exit:&lt; Application, Lmain, wordcount()[I &gt;)"/>
+  </bloc>
+</projet>

@@ -1,0 +1,269 @@
+digraph G{
+fontname = "Bitstream Vera Sans"
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+node [
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+shape = "record"
+]
+edge [
+fontname = "Bitstream Vera Sans"
+fontsize = 8
+]
+ExplodedBlock_0__entry___Application__Lmain__wordcount___I___[
+ label="{Node : 0|entry|parameters:\l1\l|constants:\l3=1\l4=0\l16=10\l21=9\l23=32\l29=3\l36=2\l}"
+]
+ExplodedBlock_0__entry___Application__Lmain__wordcount___I___->ExplodedBlock_3__original_BB_SSA_0__2_1___main_wordcount___I_
+ExplodedBlock_103__exit___Application__Lmain__wordcount___I___[
+ label="{Node : 1|exit}"
+]
+ExplodedBlock_3__original_BB_SSA_0__2_1___main_wordcount___I_[
+ label="{Node : 2|putfield 1. Application, Lmain, nl, Primordial,I  = 3|def:[]|use:[1, 3]}"
+]
+ExplodedBlock_3__original_BB_SSA_0__2_1___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_3__original_BB_SSA_0__2_1___main_wordcount___I_->ExplodedBlock_6__original_BB_SSA_3__5_2___main_wordcount___I_
+ExplodedBlock_6__original_BB_SSA_3__5_2___main_wordcount___I_[
+ label="{Node : 3|putfield 1. Application, Lmain, nw, Primordial,I  = 3|def:[]|use:[1, 3]}"
+]
+ExplodedBlock_6__original_BB_SSA_3__5_2___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_6__original_BB_SSA_3__5_2___main_wordcount___I_->ExplodedBlock_9__original_BB_SSA_6__8_3___main_wordcount___I_
+ExplodedBlock_9__original_BB_SSA_6__8_3___main_wordcount___I_[
+ label="{Node : 4|putfield 1. Application, Lmain, nc, Primordial,I  = 3|def:[]|use:[1, 3]}"
+]
+ExplodedBlock_9__original_BB_SSA_6__8_3___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_9__original_BB_SSA_6__8_3___main_wordcount___I_->ExplodedBlock_12__original_BB_SSA_9__11_4___main_wordcount___I_
+ExplodedBlock_12__original_BB_SSA_9__11_4___main_wordcount___I_[
+ label="{Node : 5|putfield 1. Application, Lmain, indent, Primordial,I  = 4|def:[]|use:[1, 4]}"
+]
+ExplodedBlock_12__original_BB_SSA_9__11_4___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_12__original_BB_SSA_9__11_4___main_wordcount___I_->ExplodedBlock_14__original_BB_SSA_12__13_5___main_wordcount___I_
+ExplodedBlock_14__original_BB_SSA_12__13_5___main_wordcount___I_[
+ label="{Node : 6|5 = getfield  Application, Lmain, indent, Primordial,I  1|def:[5]|use:[1]}"
+]
+ExplodedBlock_14__original_BB_SSA_12__13_5___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_14__original_BB_SSA_12__13_5___main_wordcount___I_->ExplodedBlock_16__original_BB_SSA_14__15_6___main_wordcount___I_
+ExplodedBlock_16__original_BB_SSA_14__15_6___main_wordcount___I_[
+ label="{Node : 7|6 = getfield  Application, Lmain, chaine, Application,Ljava/lang/String  1|def:[6]|use:[1]}"
+]
+ExplodedBlock_16__original_BB_SSA_14__15_6___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_16__original_BB_SSA_14__15_6___main_wordcount___I_->ExplodedBlock_17__original_BB_SSA_16__16_7___main_wordcount___I_
+ExplodedBlock_17__original_BB_SSA_16__16_7___main_wordcount___I_[
+ label="{Node : 8|8 = invokevirtual  Application, Ljava/lang/String, length()I  6 28 exception:7|def:[8, 7]|use:[6]}"
+]
+ExplodedBlock_17__original_BB_SSA_16__16_7___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_17__original_BB_SSA_16__16_7___main_wordcount___I_->ExplodedBlock_18__original_BB_SSA_17__17_8___main_wordcount___I_
+ExplodedBlock_18__original_BB_SSA_17__17_8___main_wordcount___I_[
+ label="{Node : 9|conditional branch(ge, to iindex=77) 5,8|def:[]|use:[5, 8]}"
+]
+ExplodedBlock_18__original_BB_SSA_17__17_8___main_wordcount___I_->ExplodedBlock_21__original_BB_SSA_18__20_9___main_wordcount___I_
+ExplodedBlock_18__original_BB_SSA_17__17_8___main_wordcount___I_->ExplodedBlock_80__original_BB_SSA_77__79_35___main_wordcount___I_
+ExplodedBlock_21__original_BB_SSA_18__20_9___main_wordcount___I_[
+ label="{Node : 10|9 = getfield  Application, Lmain, chaine, Application,Ljava/lang/String  1|def:[9]|use:[1]}"
+]
+ExplodedBlock_21__original_BB_SSA_18__20_9___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_21__original_BB_SSA_18__20_9___main_wordcount___I_->ExplodedBlock_23__original_BB_SSA_21__22_10___main_wordcount___I_
+ExplodedBlock_23__original_BB_SSA_21__22_10___main_wordcount___I_[
+ label="{Node : 11|10 = getfield  Application, Lmain, indent, Primordial,I  1|def:[10]|use:[1]}"
+]
+ExplodedBlock_23__original_BB_SSA_21__22_10___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_23__original_BB_SSA_21__22_10___main_wordcount___I_->ExplodedBlock_24__original_BB_SSA_23__23_11___main_wordcount___I_
+ExplodedBlock_24__original_BB_SSA_23__23_11___main_wordcount___I_[
+ label="{Node : 12|12 = invokevirtual  Application, Ljava/lang/String, charAt(I)C  9,10 43 exception:11|def:[12, 11]|use:[9, 10]}"
+]
+ExplodedBlock_24__original_BB_SSA_23__23_11___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_24__original_BB_SSA_23__23_11___main_wordcount___I_->ExplodedBlock_25__original_BB_SSA_24__24_12___main_wordcount___I_
+ExplodedBlock_25__original_BB_SSA_24__24_12___main_wordcount___I_[
+ label="{Node : 13|putfield 1. Application, Lmain, c, Primordial,C  = 12|def:[]|use:[1, 12]}"
+]
+ExplodedBlock_25__original_BB_SSA_24__24_12___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_25__original_BB_SSA_24__24_12___main_wordcount___I_->ExplodedBlock_28__original_BB_SSA_25__27_13___main_wordcount___I_
+ExplodedBlock_28__original_BB_SSA_25__27_13___main_wordcount___I_[
+ label="{Node : 14|13 = getfield  Application, Lmain, nc, Primordial,I  1|def:[13]|use:[1]}"
+]
+ExplodedBlock_28__original_BB_SSA_25__27_13___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_28__original_BB_SSA_25__27_13___main_wordcount___I_->ExplodedBlock_30__original_BB_SSA_28__30_14___main_wordcount___I_
+ExplodedBlock_30__original_BB_SSA_28__30_14___main_wordcount___I_[
+ label="{Node : 15|14 = binaryop(add) 13 , 3|def:[14]|use:[13, 3]}"
+]
+ExplodedBlock_30__original_BB_SSA_28__30_14___main_wordcount___I_->ExplodedBlock_31__original_BB_SSA_28__30_14___main_wordcount___I_
+ExplodedBlock_31__original_BB_SSA_28__30_14___main_wordcount___I_[
+ label="{Node : 16|putfield 1. Application, Lmain, nc, Primordial,I  = 14|def:[]|use:[1, 14]}"
+]
+ExplodedBlock_31__original_BB_SSA_28__30_14___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_31__original_BB_SSA_28__30_14___main_wordcount___I_->ExplodedBlock_33__original_BB_SSA_31__32_15___main_wordcount___I_
+ExplodedBlock_33__original_BB_SSA_31__32_15___main_wordcount___I_[
+ label="{Node : 17|15 = getfield  Application, Lmain, c, Primordial,C  1|def:[15]|use:[1]}"
+]
+ExplodedBlock_33__original_BB_SSA_31__32_15___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_33__original_BB_SSA_31__32_15___main_wordcount___I_->ExplodedBlock_35__original_BB_SSA_33__34_16___main_wordcount___I_
+ExplodedBlock_35__original_BB_SSA_33__34_16___main_wordcount___I_[
+ label="{Node : 18|conditional branch(ne, to iindex=41) 15,16|def:[]|use:[15, 16]}"
+]
+ExplodedBlock_35__original_BB_SSA_33__34_16___main_wordcount___I_->ExplodedBlock_38__original_BB_SSA_35__37_17___main_wordcount___I_
+ExplodedBlock_35__original_BB_SSA_33__34_16___main_wordcount___I_->ExplodedBlock_43__original_BB_SSA_41__42_19___main_wordcount___I_
+ExplodedBlock_38__original_BB_SSA_35__37_17___main_wordcount___I_[
+ label="{Node : 19|17 = getfield  Application, Lmain, nl, Primordial,I  1|def:[17]|use:[1]}"
+]
+ExplodedBlock_38__original_BB_SSA_35__37_17___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_38__original_BB_SSA_35__37_17___main_wordcount___I_->ExplodedBlock_40__original_BB_SSA_38__40_18___main_wordcount___I_
+ExplodedBlock_40__original_BB_SSA_38__40_18___main_wordcount___I_[
+ label="{Node : 20|18 = binaryop(add) 17 , 3|def:[18]|use:[17, 3]}"
+]
+ExplodedBlock_40__original_BB_SSA_38__40_18___main_wordcount___I_->ExplodedBlock_41__original_BB_SSA_38__40_18___main_wordcount___I_
+ExplodedBlock_41__original_BB_SSA_38__40_18___main_wordcount___I_[
+ label="{Node : 21|putfield 1. Application, Lmain, nl, Primordial,I  = 18|def:[]|use:[1, 18]}"
+]
+ExplodedBlock_41__original_BB_SSA_38__40_18___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_41__original_BB_SSA_38__40_18___main_wordcount___I_->ExplodedBlock_43__original_BB_SSA_41__42_19___main_wordcount___I_
+ExplodedBlock_43__original_BB_SSA_41__42_19___main_wordcount___I_[
+ label="{Node : 22|19 = getfield  Application, Lmain, c, Primordial,C  1|def:[19]|use:[1]}"
+]
+ExplodedBlock_43__original_BB_SSA_41__42_19___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_43__original_BB_SSA_41__42_19___main_wordcount___I_->ExplodedBlock_45__original_BB_SSA_43__44_20___main_wordcount___I_
+ExplodedBlock_45__original_BB_SSA_43__44_20___main_wordcount___I_[
+ label="{Node : 23|conditional branch(eq, to iindex=53) 19,16|def:[]|use:[19, 16]}"
+]
+ExplodedBlock_45__original_BB_SSA_43__44_20___main_wordcount___I_->ExplodedBlock_47__original_BB_SSA_45__46_21___main_wordcount___I_
+ExplodedBlock_45__original_BB_SSA_43__44_20___main_wordcount___I_->ExplodedBlock_55__original_BB_SSA_53__54_25___main_wordcount___I_
+ExplodedBlock_47__original_BB_SSA_45__46_21___main_wordcount___I_[
+ label="{Node : 24|20 = getfield  Application, Lmain, c, Primordial,C  1|def:[20]|use:[1]}"
+]
+ExplodedBlock_47__original_BB_SSA_45__46_21___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_47__original_BB_SSA_45__46_21___main_wordcount___I_->ExplodedBlock_49__original_BB_SSA_47__48_22___main_wordcount___I_
+ExplodedBlock_49__original_BB_SSA_47__48_22___main_wordcount___I_[
+ label="{Node : 25|conditional branch(eq, to iindex=53) 20,21|def:[]|use:[20, 21]}"
+]
+ExplodedBlock_49__original_BB_SSA_47__48_22___main_wordcount___I_->ExplodedBlock_51__original_BB_SSA_49__50_23___main_wordcount___I_
+ExplodedBlock_49__original_BB_SSA_47__48_22___main_wordcount___I_->ExplodedBlock_55__original_BB_SSA_53__54_25___main_wordcount___I_
+ExplodedBlock_51__original_BB_SSA_49__50_23___main_wordcount___I_[
+ label="{Node : 26|22 = getfield  Application, Lmain, c, Primordial,C  1|def:[22]|use:[1]}"
+]
+ExplodedBlock_51__original_BB_SSA_49__50_23___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_51__original_BB_SSA_49__50_23___main_wordcount___I_->ExplodedBlock_53__original_BB_SSA_51__52_24___main_wordcount___I_
+ExplodedBlock_53__original_BB_SSA_51__52_24___main_wordcount___I_[
+ label="{Node : 27|conditional branch(ne, to iindex=67) 22,23|def:[]|use:[22, 23]}"
+]
+ExplodedBlock_53__original_BB_SSA_51__52_24___main_wordcount___I_->ExplodedBlock_55__original_BB_SSA_53__54_25___main_wordcount___I_
+ExplodedBlock_53__original_BB_SSA_51__52_24___main_wordcount___I_->ExplodedBlock_70__original_BB_SSA_67__69_31___main_wordcount___I_
+ExplodedBlock_55__original_BB_SSA_53__54_25___main_wordcount___I_[
+ label="{Node : 28|24 = getfield  Application, Lmain, inword, Primordial,Z  1|def:[24]|use:[1]}"
+]
+ExplodedBlock_55__original_BB_SSA_53__54_25___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_55__original_BB_SSA_53__54_25___main_wordcount___I_->ExplodedBlock_57__original_BB_SSA_55__56_26___main_wordcount___I_
+ExplodedBlock_57__original_BB_SSA_55__56_26___main_wordcount___I_[
+ label="{Node : 29|conditional branch(ne, to iindex=70) 24,4|def:[]|use:[24, 4]}"
+]
+ExplodedBlock_57__original_BB_SSA_55__56_26___main_wordcount___I_->ExplodedBlock_60__original_BB_SSA_57__59_27___main_wordcount___I_
+ExplodedBlock_57__original_BB_SSA_55__56_26___main_wordcount___I_->ExplodedBlock_73__original_BB_SSA_70__72_32___main_wordcount___I_
+ExplodedBlock_60__original_BB_SSA_57__59_27___main_wordcount___I_[
+ label="{Node : 30|putfield 1. Application, Lmain, inword, Primordial,Z  = 3|def:[]|use:[1, 3]}"
+]
+ExplodedBlock_60__original_BB_SSA_57__59_27___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_60__original_BB_SSA_57__59_27___main_wordcount___I_->ExplodedBlock_63__original_BB_SSA_60__62_28___main_wordcount___I_
+ExplodedBlock_63__original_BB_SSA_60__62_28___main_wordcount___I_[
+ label="{Node : 31|25 = getfield  Application, Lmain, nw, Primordial,I  1|def:[25]|use:[1]}"
+]
+ExplodedBlock_63__original_BB_SSA_60__62_28___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_63__original_BB_SSA_60__62_28___main_wordcount___I_->ExplodedBlock_65__original_BB_SSA_63__65_29___main_wordcount___I_
+ExplodedBlock_65__original_BB_SSA_63__65_29___main_wordcount___I_[
+ label="{Node : 32|26 = binaryop(add) 25 , 3|def:[26]|use:[25, 3]}"
+]
+ExplodedBlock_65__original_BB_SSA_63__65_29___main_wordcount___I_->ExplodedBlock_66__original_BB_SSA_63__65_29___main_wordcount___I_
+ExplodedBlock_66__original_BB_SSA_63__65_29___main_wordcount___I_[
+ label="{Node : 33|putfield 1. Application, Lmain, nw, Primordial,I  = 26|def:[]|use:[1, 26]}"
+]
+ExplodedBlock_66__original_BB_SSA_63__65_29___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_66__original_BB_SSA_63__65_29___main_wordcount___I_->ExplodedBlock_67__original_BB_SSA_66__66_30___main_wordcount___I_
+ExplodedBlock_67__original_BB_SSA_66__66_30___main_wordcount___I_[
+ label="{Node : 34|goto (from iindex= 66 to iindex = 70)|def:[]|use:[]}"
+]
+ExplodedBlock_67__original_BB_SSA_66__66_30___main_wordcount___I_->ExplodedBlock_73__original_BB_SSA_70__72_32___main_wordcount___I_
+ExplodedBlock_70__original_BB_SSA_67__69_31___main_wordcount___I_[
+ label="{Node : 35|putfield 1. Application, Lmain, inword, Primordial,Z  = 4|def:[]|use:[1, 4]}"
+]
+ExplodedBlock_70__original_BB_SSA_67__69_31___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_70__original_BB_SSA_67__69_31___main_wordcount___I_->ExplodedBlock_73__original_BB_SSA_70__72_32___main_wordcount___I_
+ExplodedBlock_73__original_BB_SSA_70__72_32___main_wordcount___I_[
+ label="{Node : 36|27 = getfield  Application, Lmain, indent, Primordial,I  1|def:[27]|use:[1]}"
+]
+ExplodedBlock_73__original_BB_SSA_70__72_32___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_73__original_BB_SSA_70__72_32___main_wordcount___I_->ExplodedBlock_75__original_BB_SSA_73__75_33___main_wordcount___I_
+ExplodedBlock_75__original_BB_SSA_73__75_33___main_wordcount___I_[
+ label="{Node : 37|28 = binaryop(add) 27 , 3|def:[28]|use:[27, 3]}"
+]
+ExplodedBlock_75__original_BB_SSA_73__75_33___main_wordcount___I_->ExplodedBlock_76__original_BB_SSA_73__75_33___main_wordcount___I_
+ExplodedBlock_76__original_BB_SSA_73__75_33___main_wordcount___I_[
+ label="{Node : 38|putfield 1. Application, Lmain, indent, Primordial,I  = 28|def:[]|use:[1, 28]}"
+]
+ExplodedBlock_76__original_BB_SSA_73__75_33___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_76__original_BB_SSA_73__75_33___main_wordcount___I_->ExplodedBlock_77__original_BB_SSA_76__76_34___main_wordcount___I_
+ExplodedBlock_77__original_BB_SSA_76__76_34___main_wordcount___I_[
+ label="{Node : 39|goto (from iindex= 76 to iindex = 12)|def:[]|use:[]}"
+]
+ExplodedBlock_77__original_BB_SSA_76__76_34___main_wordcount___I_->ExplodedBlock_14__original_BB_SSA_12__13_5___main_wordcount___I_
+ExplodedBlock_80__original_BB_SSA_77__79_35___main_wordcount___I_[
+ label="{Node : 40|30 = new Primordial,[I15029 |def:[30]|use:[29]}"
+]
+ExplodedBlock_80__original_BB_SSA_77__79_35___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_80__original_BB_SSA_77__79_35___main_wordcount___I_->ExplodedBlock_81__original_BB_SSA_80__80_36___main_wordcount___I_
+ExplodedBlock_81__original_BB_SSA_80__80_36___main_wordcount___I_[
+ label="{Node : 41|putfield 1. Application, Lmain, s, Primordial,[I  = 30|def:[]|use:[1, 30]}"
+]
+ExplodedBlock_81__original_BB_SSA_80__80_36___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_81__original_BB_SSA_80__80_36___main_wordcount___I_->ExplodedBlock_83__original_BB_SSA_81__82_37___main_wordcount___I_
+ExplodedBlock_83__original_BB_SSA_81__82_37___main_wordcount___I_[
+ label="{Node : 42|31 = getfield  Application, Lmain, s, Primordial,[I  1|def:[31]|use:[1]}"
+]
+ExplodedBlock_83__original_BB_SSA_81__82_37___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_83__original_BB_SSA_81__82_37___main_wordcount___I_->ExplodedBlock_86__original_BB_SSA_83__85_38___main_wordcount___I_
+ExplodedBlock_86__original_BB_SSA_83__85_38___main_wordcount___I_[
+ label="{Node : 43|32 = getfield  Application, Lmain, nl, Primordial,I  1|def:[32]|use:[1]}"
+]
+ExplodedBlock_86__original_BB_SSA_83__85_38___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_86__original_BB_SSA_83__85_38___main_wordcount___I_->ExplodedBlock_87__original_BB_SSA_86__86_39___main_wordcount___I_
+ExplodedBlock_87__original_BB_SSA_86__86_39___main_wordcount___I_[
+ label="{Node : 44|arraystore 31[4] = 32|def:[]|use:[31, 4, 32]}"
+]
+ExplodedBlock_87__original_BB_SSA_86__86_39___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_87__original_BB_SSA_86__86_39___main_wordcount___I_->ExplodedBlock_89__original_BB_SSA_87__88_40___main_wordcount___I_
+ExplodedBlock_89__original_BB_SSA_87__88_40___main_wordcount___I_[
+ label="{Node : 45|33 = getfield  Application, Lmain, s, Primordial,[I  1|def:[33]|use:[1]}"
+]
+ExplodedBlock_89__original_BB_SSA_87__88_40___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_89__original_BB_SSA_87__88_40___main_wordcount___I_->ExplodedBlock_92__original_BB_SSA_89__91_41___main_wordcount___I_
+ExplodedBlock_92__original_BB_SSA_89__91_41___main_wordcount___I_[
+ label="{Node : 46|34 = getfield  Application, Lmain, nw, Primordial,I  1|def:[34]|use:[1]}"
+]
+ExplodedBlock_92__original_BB_SSA_89__91_41___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_92__original_BB_SSA_89__91_41___main_wordcount___I_->ExplodedBlock_93__original_BB_SSA_92__92_42___main_wordcount___I_
+ExplodedBlock_93__original_BB_SSA_92__92_42___main_wordcount___I_[
+ label="{Node : 47|arraystore 33[3] = 34|def:[]|use:[33, 3, 34]}"
+]
+ExplodedBlock_93__original_BB_SSA_92__92_42___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_93__original_BB_SSA_92__92_42___main_wordcount___I_->ExplodedBlock_95__original_BB_SSA_93__94_43___main_wordcount___I_
+ExplodedBlock_95__original_BB_SSA_93__94_43___main_wordcount___I_[
+ label="{Node : 48|35 = getfield  Application, Lmain, s, Primordial,[I  1|def:[35]|use:[1]}"
+]
+ExplodedBlock_95__original_BB_SSA_93__94_43___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_95__original_BB_SSA_93__94_43___main_wordcount___I_->ExplodedBlock_98__original_BB_SSA_95__97_44___main_wordcount___I_
+ExplodedBlock_98__original_BB_SSA_95__97_44___main_wordcount___I_[
+ label="{Node : 49|37 = getfield  Application, Lmain, nc, Primordial,I  1|def:[37]|use:[1]}"
+]
+ExplodedBlock_98__original_BB_SSA_95__97_44___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_98__original_BB_SSA_95__97_44___main_wordcount___I_->ExplodedBlock_99__original_BB_SSA_98__98_45___main_wordcount___I_
+ExplodedBlock_99__original_BB_SSA_98__98_45___main_wordcount___I_[
+ label="{Node : 50|arraystore 35[36] = 37|def:[]|use:[35, 36, 37]}"
+]
+ExplodedBlock_99__original_BB_SSA_98__98_45___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_99__original_BB_SSA_98__98_45___main_wordcount___I_->ExplodedBlock_101__original_BB_SSA_99__100_46___main_wordcount___I_
+ExplodedBlock_101__original_BB_SSA_99__100_46___main_wordcount___I_[
+ label="{Node : 51|38 = getfield  Application, Lmain, s, Primordial,[I  1|def:[38]|use:[1]}"
+]
+ExplodedBlock_101__original_BB_SSA_99__100_46___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+ExplodedBlock_101__original_BB_SSA_99__100_46___main_wordcount___I_->ExplodedBlock_102__original_BB_SSA_101__101_47___main_wordcount___I_
+ExplodedBlock_102__original_BB_SSA_101__101_47___main_wordcount___I_[
+ label="{Node : 52|return 38|def:[]|use:[38]}"
+]
+ExplodedBlock_102__original_BB_SSA_101__101_47___main_wordcount___I_->ExplodedBlock_103__exit___Application__Lmain__wordcount___I___
+}
