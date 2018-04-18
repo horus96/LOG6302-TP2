@@ -8,6 +8,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *     Nicolas Cloutier - Polymtl Modification for an easy build
+ *     Karl Julien - Polymtl Modification for extraction
  *******************************************************************************/
 package com.polymtl.hello.drivers;
 
@@ -15,28 +16,29 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.io.IOException;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
+import java.util.*;
 
+import com.ibm.wala.analysis.pointers.BasicHeapGraph;
 import com.ibm.wala.cast.ir.ssa.AstIRFactory;
+import com.ibm.wala.cast.ir.ssa.SSAConversion;
 import com.ibm.wala.cast.loader.AstMethod;
 import com.ibm.wala.cast.types.AstMethodReference;
 import com.ibm.wala.cfg.ControlFlowGraph;
-import com.ibm.wala.classLoader.IClass;
-import com.ibm.wala.classLoader.IField;
-import com.ibm.wala.classLoader.IMethod;
+import com.ibm.wala.classLoader.*;
 import com.ibm.wala.dataflow.IFDS.ICFGSupergraph;
 import com.ibm.wala.dataflow.IFDS.ISupergraph;
 import com.ibm.wala.ipa.callgraph.*;
 import com.ibm.wala.ipa.callgraph.impl.Everywhere;
 import com.ibm.wala.ipa.callgraph.impl.Util;
+import com.ibm.wala.ipa.callgraph.propagation.InstanceKey;
+import com.ibm.wala.ipa.callgraph.propagation.PointerAnalysis;
 import com.ibm.wala.ipa.cfg.BasicBlockInContext;
 import com.ibm.wala.ipa.cfg.ExplodedInterproceduralCFG;
 import com.ibm.wala.ipa.cha.ClassHierarchy;
 import com.ibm.wala.ipa.cha.ClassHierarchyFactory;
 import com.ibm.wala.ipa.cha.IClassHierarchy;
 import com.ibm.wala.shrikeBT.Instruction;
+import com.ibm.wala.shrikeCT.InvalidClassFileException;
 import com.ibm.wala.ssa.*;
 import com.ibm.wala.ssa.analysis.IExplodedBasicBlock;
 import com.ibm.wala.types.ClassLoaderReference;
@@ -47,6 +49,8 @@ import com.ibm.wala.util.collections.Factory;
 import com.ibm.wala.util.graph.Graph;
 import com.ibm.wala.util.graph.GraphSlicer;
 import com.ibm.wala.util.graph.impl.SlowSparseNumberedGraph;
+import com.ibm.wala.viz.DotUtil;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -65,23 +69,23 @@ public class DumpWala extends BasicAnalysis {
     public void run() throws IOException, CallGraphBuilderCancelException {
         try {
 
-            String outFilef = "/home/travail/logf.txt";
+            String outFilef = "../textFiles/methodinfo.txt";
             System.out.println(outFilef);
 
-            String outFilecfg = "/home/travail/logcfg.txt";
+            String outFilecfg = "../logcfg.txt";
             System.out.println(outFilecfg);
 
-            String outFilesupercfg = "/home/travail/logsupercfg.txt";
+            String outFilesupercfg = "../logsupercfg.txt";
             System.out.println(outFilesupercfg);
 
-            String outIntRep = "/home/travail/logir.txt";
+            String outIntRep = "../logir.txt";
 
 
-            String outStrSsa = "/home/travail/logssa.txt";
-            String outXml = "/home/travail/logxml.txt";
+            String outStrSsa = "../logssa.txt";
+            String outXml = "../logxml.txt";
 
 
-            String outStrSsaBis = "/home/travail/logssabis.txt";
+            String outStrSsaBis = "../logssabis.txt";
 
             PrintWriter outtt = new PrintWriter(outFilef);
             PrintWriter outttt = new PrintWriter(outFilecfg);
@@ -92,7 +96,8 @@ public class DumpWala extends BasicAnalysis {
             PrintWriter outxml = new PrintWriter(outXml);
 
 
-            HashMap<String,Element> xmlFunc = new HashMap();
+            HashMap<String,Element> xmlFuncMap = new HashMap();
+            HashMap<String,Element> xmlClassMap = new HashMap();
 
 
             boolean showPrimordial= false;
@@ -106,7 +111,15 @@ public class DumpWala extends BasicAnalysis {
 
 
             AnalysisOptions options = new AnalysisOptions();
+
+
+            //definition des points d'entree
+
             Iterable<Entrypoint> entrypoints = Util.makeMainEntrypoints(scope, cha);
+
+
+            //definition des options d extraction
+
             options.setEntrypoints(entrypoints);
             // you can dial down reflection handling if you like
             options.setReflectionOptions(AnalysisOptions.ReflectionOptions.NONE);
@@ -117,7 +130,9 @@ public class DumpWala extends BasicAnalysis {
 //	    CallGraphBuilder builder = Util.makeVanillaNCFABuilder(2, options, cache, cha, scope);
             System.out.println("building call graph...");
             CallGraph cg = builder.makeCallGraph(options, null);
-
+            /*PointerAnalysis<InstanceKey> pointerAnalysis = builder.getPointerAnalysis();
+            BasicHeapGraph heapGraph = new BasicHeapGraph<>(pointerAnalysis, cg);
+            DotUtil.dotify(heapGraph,null,"/home/travail/TP2/LOG6302_TP2/pointer.dot",null,null);*/
 
             // invoke WALA to build a class hierarchyPrintWriter out = new PrintWriter(outFile)
 
@@ -127,7 +142,7 @@ public class DumpWala extends BasicAnalysis {
 
 
 
-
+            // extraction d informations sur les methodes pour la generation du diagramme UML
             for (IClass c : g) {
 
 
@@ -141,7 +156,7 @@ public class DumpWala extends BasicAnalysis {
             }
             g = pruneForAppLoader(g);
             //String outFile = File.createTempFile("out", ".txt").getAbsolutePath();
-            String outFile = "/home/travail/log.txt";
+            String outFile = "../textFiles/heritage.txt";
             System.out.println(outFile);
             try (PrintWriter out = new PrintWriter(outFile)) {
                 out.println(g);
@@ -161,10 +176,15 @@ public class DumpWala extends BasicAnalysis {
             Iterator<BasicBlockInContext<IExplodedBasicBlock>> it = interbis.iterator();
             BasicBlockInContext<IExplodedBasicBlock> bloc = it.next();
 
+
+
+            //impression du cfg en format xml
+
             while (it.hasNext()) {
 
 
                 IMethod m = bloc.getMethod();
+
 
                 IMethod m2 = m;
 
@@ -177,38 +197,70 @@ public class DumpWala extends BasicAnalysis {
 
 
                     Element xmlMethod;
+                    Element xmlClass;
 
-                    if (xmlFunc.containsKey(m.toString())){
-                        xmlMethod=xmlFunc.get(m.toString());
+
+                    //Si la methode ou la classe a deja ete visitee, on met les nouveaux blocs dans la meme methode
+                    if (xmlFuncMap.containsKey(m.toString())){
+                        xmlMethod=xmlFuncMap.get(m.toString());
+                        xmlClass=xmlClassMap.get(m.getDeclaringClass().toString());
                     }else{
+
                         xmlMethod = xml.createElement("function");
                         xmlMethod.setAttribute("name", m.toString());
+                        xmlFuncMap.put(m.toString(),xmlMethod);
+                        if (xmlClassMap.containsKey(m.getDeclaringClass().toString())){
+                        xmlClass=xmlClassMap.get(m.getDeclaringClass().toString());
+                        }else{
+
+                        xmlClass=xml.createElement("class");
+                        xmlClass.setAttribute("name", m.getDeclaringClass().toString());
+                        xmlClassMap.put(m.getDeclaringClass().toString(),xmlClass);
+                        xmlRoot.appendChild(xmlClass);
+                        Collection<IField> fs = m.getDeclaringClass().getAllFields();
+                        for (IField i : fs){
+                            Element xmlField = xml.createElement("field");
+                            xmlField.setAttribute("name",i.toString());
+                            xmlClass.appendChild(xmlField);
+                            }
+
+                        }
+                        xmlClass.appendChild(xmlMethod);
                     }
 
 
 
-                xmlRoot.appendChild(xmlMethod);
+
 
                 //outxml.print("<function name=\"");
                 //outxml.print(m);
                 //outxml.println("\">");
 
                 //<function name="get_sitestats">
-                IR ir = factory.makeIR(m, Everywhere.EVERYWHERE, new SSAOptions());
-                DefUse du = new DefUse(ir);
 
+                IR ir= bloc.getNode().getIR();
+
+
+                SymbolTable table = ir.getSymbolTable();
+                DefUse du = bloc.getNode().getDU();
+                Context context = bloc.getNode().getContext();
                 addConstants(xmlMethod,ir, xml);
 
 
+                    /*IR.SSA2LocalMap localMap = SSAConversion.convert( m, ir, SSAOptions.defaultOptions());
+                    AstIRFactory.AstIR;*/
 
 
-
-
+                // On entre dans une methode
                 while (m2 == m && it.hasNext()) {
 
+                    String sfName = m.getDeclaringClass().getSourceFileName();
 
                     Element xmlBloc = xml.createElement("bloc");
+
                     xmlBloc.setAttribute("name", bloc.toString());
+                    xmlBloc.setAttribute("context", context.toString());
+
                     xmlMethod.appendChild(xmlBloc);
 
                     //outxml.print("\t<bloc=\"");
@@ -217,6 +269,7 @@ public class DumpWala extends BasicAnalysis {
 
                     Iterator<BasicBlockInContext<IExplodedBasicBlock>> succIt = interbis.getSuccNodes(bloc);
 
+                    //Extraction des arcs
                     while (succIt.hasNext()) {
 
 
@@ -234,6 +287,9 @@ public class DumpWala extends BasicAnalysis {
 
 
                     if (ssaInstr != null) {
+
+
+
                         Element xmlSsa = xml.createElement("ssa");
                         xmlSsa.setAttribute("instruction", ssaInstr.toString());
                         xmlBloc.appendChild(xmlSsa);
@@ -241,10 +297,61 @@ public class DumpWala extends BasicAnalysis {
                         //outxml.print(ssaInstr.toString());
                         //outxml.println("\">");
 
+
+                        IBytecodeMethod bcm = ((IBytecodeMethod) m);
+                        int bcIndex = bcm.getBytecodeIndex(ssaInstr.iindex);
+                        int sourceLineNum = bcm.getLineNumber(bcIndex);
+
+
                         for (int j = 0; j < ssaInstr.getNumberOfDefs(); j++) {
                             Element xmlDef = xml.createElement("def");
                             xmlDef.setAttribute("id", String.valueOf(ssaInstr.getDef(j)));
                             xmlSsa.appendChild(xmlDef);
+
+
+                            /*for (int k = 1; k <=heapGraph.getMaxNumber(); k++) {
+                                String[] splitedNode=(heapGraph.getNode(k)).toString().split(" Context:");
+
+
+                                if(        splitedNode.length>1){
+
+
+
+
+
+
+                                    if(splitedNode[0].contains(xmlMethod.getAttribute("name"))
+                                        && splitedNode[1].contains(context.toString())
+                                        && splitedNode[1].contains("v"+String.valueOf(ssaInstr.getDef(j))+"]")){
+
+
+
+                                        //Iterator typeit = heapGraph.getSuccNodes(k);
+
+                                        Stack types = new Stack();
+                                        types.push(heapGraph.getNode(k));
+                                        while (!types.isEmpty()){
+                                            Object node = types.pop();
+                                            if (heapGraph.getSuccNodeCount(node)>0){
+                                                Iterator typeit=heapGraph.getSuccNodes(node);
+                                                while(typeit.hasNext()){
+                                                    types.push(typeit.next());
+                                                }
+                                            }
+                                            else{
+                                                Element xmlType = xml.createElement("type");
+                                                xmlType.setAttribute("name", String.valueOf(node));
+                                                xmlDef.appendChild(xmlType);
+
+                                            }
+
+
+                                        }
+
+                                    }}
+                            }*/
+
+
 
                             //outxml.print("\t\t\t<def id=");outxml.print(ssaInstr.getDef(j));outxml.println(">");
                         }
@@ -253,6 +360,7 @@ public class DumpWala extends BasicAnalysis {
                             Element xmlUse = xml.createElement("use");
                             xmlUse.setAttribute("id", String.valueOf(ssaInstr.getUse(j)));
                             xmlSsa.appendChild(xmlUse);
+                            String[] loc = ir.getLocalNames(ssaInstr.iindex, ssaInstr.getUse(j));
 
                             if (bloc.getLastInstructionIndex()>=0&&du.getDef(ssaInstr.getUse(j))!=null){
                                 Element xmlDefssa = xml.createElement("ref");
@@ -268,12 +376,13 @@ public class DumpWala extends BasicAnalysis {
                     //outxml.println("\t\t</ssa>");}
 
 
+                    //Extraction des instructions phi et pi
                     Iterator<SSAPhiInstruction> iteratorPhis = bloc.getDelegate().iteratePhis();
                     if (iteratorPhis.hasNext()) {
+
                         Element xmlPhis = xml.createElement("phis");
                         xmlBloc.appendChild(xmlPhis);
 
-                        outssabis.println("phis:");
 
                         //outxml.println("\t\t<phis>");
 
@@ -294,6 +403,8 @@ public class DumpWala extends BasicAnalysis {
                                 xmlSsaDef.setAttribute("id", String.valueOf(PhiInst.getDef(j)));
                                 xmlSsaPhis.appendChild(xmlSsaDef);
 
+
+
                                 //outxml.print("\t\t\t\t<def id=");
                                 //outxml.print(PhiInst.getDef(j));
                                 //outxml.println(">");
@@ -308,7 +419,9 @@ public class DumpWala extends BasicAnalysis {
                                 //outxml.println(">");
                             }
                         }
-                    }
+                    }//fin de l'extraction du cfg en format xml
+
+
 
                     outssabis.println("the instr:");
                     outssabis.println(bloc.getDelegate().getInstruction());
@@ -368,7 +481,7 @@ public class DumpWala extends BasicAnalysis {
             }
 
 
-            String resultFile = "/home/travail/TP2/LOG6302_TP2/doc.xml";
+            String resultFile = "../textFiles/dumpedcfg.xml";
             StreamResult XML = new StreamResult(resultFile);
             Transformer t = TransformerFactory.newInstance().newTransformer();
             t.setOutputProperty(OutputKeys.INDENT, "yes");
@@ -377,65 +490,9 @@ public class DumpWala extends BasicAnalysis {
 
 
             //cfg
-            for (IClass klass : cha) {
 
-                // get the IMethod representing the code
-                if (klass.getClassLoader().getReference().equals(ClassLoaderReference.Application)) {
-                    for (IMethod m : klass.getDeclaredMethods()) {
-                        if (m != null) {
-                            try {
-                                IR ir = factory.makeIR(m, Everywhere.EVERYWHERE, new SSAOptions());
+            printcfg(factory, cha,outssa, outir, outttt);
 
-                                outir.println(ir);
-                                ControlFlowGraph<SSAInstruction, ISSABasicBlock> cfg = ir.getControlFlowGraph();
-                                outssa.println(m);
-                                for (SSAInstruction i : cfg.getInstructions()) {
-                                    try {
-
-                                        outssa.print(i.iindex);
-                                        outssa.print(" : ");
-                                        outssa.print(ir.getBasicBlockForInstruction(i));
-                                        outssa.print(" : ");
-                                        outssa.println(i);
-                                        outssa.print("|| NDef = ");
-                                        outssa.print(i.getNumberOfDefs());
-                                        outssa.print("|| NUse = ");
-                                        outssa.println(i.getNumberOfUses());
-                                        if (i.getNumberOfDefs() > 0) {
-                                            outssa.print("def:");
-
-                                            for (int j = 0; j < i.getNumberOfDefs(); j++) {
-                                                outssa.print(i.getDef(j));
-                                                outssa.print(", ");
-                                            }
-                                            outssa.println();
-                                        }
-                                        if (i.getNumberOfUses() > 0) {
-                                            outssa.print("uses:");
-                                            for (int j = 0; j < i.getNumberOfUses(); j++) {
-                                                outssa.print(i.getUse(j));
-                                                outssa.print(", ");
-                                            }
-                                            outssa.println();
-                                        }
-                                    } catch (Exception e) {
-                                        outssa.println("error");
-                                    }
-                                }
-                                outttt.println(cfg);
-                            } catch (Exception e2) {
-                                outttt.println("error");
-                                outssa.println("error");
-                            }
-                            outttt.println("===================================");
-                            outssa.println("===================================");
-                            outttt.println(klass.getName());
-                            outttt.println(m.getName());
-                        }
-                    }
-
-                }
-            }
             outssa.close();
             outssabis.close();
             outxml.close();
@@ -449,7 +506,7 @@ public class DumpWala extends BasicAnalysis {
               getICFG().;*/
 
 
-            String outFile2 = "/home/travail/locg.txt";
+            String outFile2 = "../locg.txt";
             System.out.println(outFile2);
             try (PrintWriter outt = new PrintWriter(outFile2)) {
                 outt.println(cg);
@@ -464,6 +521,8 @@ public class DumpWala extends BasicAnalysis {
         } catch (TransformerConfigurationException e) {
             e.printStackTrace();
         } catch (TransformerException e) {
+            e.printStackTrace();
+        } catch (InvalidClassFileException e) {
             e.printStackTrace();
         }
     }
@@ -488,6 +547,7 @@ public class DumpWala extends BasicAnalysis {
                 Element xmlConstant = xml.createElement("constant");
                 xmlConstant.setAttribute("id", String.valueOf(i));
                 xmlConstant.setAttribute("value", String.valueOf(table.getConstantValue(i)));
+                //xmlConstant.setAttribute("type",(table.getConstantValue(i)).getClass().toString());
                 xmlMethod.appendChild(xmlConstant);
             }
 
@@ -495,6 +555,68 @@ public class DumpWala extends BasicAnalysis {
         }
 
 
+    }
+
+    public static void printcfg(IRFactory<IMethod> factory, ClassHierarchy cha, PrintWriter outssa, PrintWriter outir, PrintWriter outttt){
+        for (IClass klass : cha) {
+
+            // get the IMethod representing the code
+            if (klass.getClassLoader().getReference().equals(ClassLoaderReference.Application)) {
+                for (IMethod m : klass.getDeclaredMethods()) {
+                    if (m != null) {
+                        try {
+                            IR ir = factory.makeIR(m, Everywhere.EVERYWHERE, new SSAOptions());
+
+                            outir.println(ir);
+                            ControlFlowGraph<SSAInstruction, ISSABasicBlock> cfg = ir.getControlFlowGraph();
+                            outssa.println(m);
+                            for (SSAInstruction i : cfg.getInstructions()) {
+                                try {
+
+                                    outssa.print(i.iindex);
+                                    outssa.print(" : ");
+                                    outssa.print(ir.getBasicBlockForInstruction(i));
+                                    outssa.print(" : ");
+                                    outssa.println(i);
+                                    outssa.print("|| NDef = ");
+                                    outssa.print(i.getNumberOfDefs());
+                                    outssa.print("|| NUse = ");
+                                    outssa.println(i.getNumberOfUses());
+                                    if (i.getNumberOfDefs() > 0) {
+                                        outssa.print("def:");
+
+                                        for (int j = 0; j < i.getNumberOfDefs(); j++) {
+                                            outssa.print(i.getDef(j));
+                                            outssa.print(", ");
+                                        }
+                                        outssa.println();
+                                    }
+                                    if (i.getNumberOfUses() > 0) {
+                                        outssa.print("uses:");
+                                        for (int j = 0; j < i.getNumberOfUses(); j++) {
+                                            outssa.print(i.getUse(j));
+                                            outssa.print(", ");
+                                        }
+                                        outssa.println();
+                                    }
+                                } catch (Exception e) {
+                                    outssa.println("error");
+                                }
+                            }
+                            outttt.println(cfg);
+                        } catch (Exception e2) {
+                            outttt.println("error");
+                            outssa.println("error");
+                        }
+                        outttt.println("===================================");
+                        outssa.println("===================================");
+                        outttt.println(klass.getName());
+                        outttt.println(m.getName());
+                    }
+                }
+
+            }
+        }
     }
 
 

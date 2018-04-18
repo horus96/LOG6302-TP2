@@ -1,27 +1,74 @@
+Tous les outils python du dossier python doivent être lancés depuis la racine du projet
+
+
 WALA-hello-master project :
--> doc.xml
+java main
+-> textFiles/dumpedcfg.xml
+-> textFiles/heritage.txt
+-> textFiles/methodinfo.txt
 (imprime le cfg en format xml)
 
 
-xmlcleaner :
-doc.xml -> cleancfg.xml
-(cfg abrégé en format xml)
+gengraphcode.py
+textFiles/heritage.txt, textFiles/methodinfo.txt
+	-> logSingle.dot 
+	-> logStatement.dot
+	-> logBigPart.dot
+	-> logSmallPart.dot
+	-> logTestCase.dot
+	-> logRunListener.dot
+
+trivial/xmlcleaner.py :
+arg : nom de la méthode à extraire
+textFiles/dumpedcfg.xml -> textFiles/cfgintra.xml
+(cfg abrégé en format xml, méthodes et classes fusionnées)
 
 
-cfgprinter :
-doc.xml -> cfg.dot
+trivial/cfgprinter.py :
+arg : nom de la méthode à extraire
+textFiles/dumpedcfg.xml -> textFiles/cfg.dot
 (affiche le cfg depuis le cfg)
 
 
-newcfgprinter :
-newcfg.xml -> newcfg.dot
-(affiche le cfg depuis le cfg abrégé)
 
-
-defVal :
-cleancfg.xml -> defVar.dot, defVar.txt
+trivial/defVar :
+arg : nom de la méthode à extraire
+textFiles/cleancfg.xml -> textFiles/defVar.dot, textFiles/defVar.txt
 (affiche le cfg annoté des ensembles gen, kill, in et out)
 
-domPostdom :
-cleancfg.xml -> dom.dot, postdom.dot
+trivial/domPostdom :
+textFiles/cleancfg.xml -> textFiles/dom.dot, textFiles/postdom.dot
 (affiche les arbres de dominateurs et postdominateurs)
+
+
+trivial/depanalysis :
+textFiles/cleancfg.xml -> textFiles/dependencies.dot, textFiles/slicing.csv
+(affiche les arcs de dépendances et effectue le slicing sur les différents attributs)
+
+project_treatment/xmlcleanerComplete.py :
+arg : nom de la méthode à extraire
+textFiles/dumpedcfg.xml -> textFiles/cleancfg.xml
+(cfg abrégé en format xml, méthodes et classes fusionnées)
+
+
+project_treatment/xmlcleanerComplete.py :
+arg : nom de la méthode à extraire
+textFiles/doc.xml -> textFiles/cfg.dot
+(génère le cfg depuis le cfg)
+
+
+
+project_treatment/defVal :
+arg : nom de la méthode à extraire
+textFiles/cleancfg.xml -> textFiles/defVar.xml
+(génère les ensembles gen, kill, in et out pour chaque noeud)
+
+project_treatment/domPostdom :
+textFiles/cleancfg.xml -> textFiles/dompostdom.xml
+(génère les arbres de dominateurs et postdominateurs)
+
+
+project_treatment/depanalysis :
+textFiles/cleancfg.xml -> textFiles/dependencies.xml
+(génère les arcs de dépendances et effectue le slicing sur les différents attributs)
+

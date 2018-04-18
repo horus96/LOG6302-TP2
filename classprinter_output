@@ -1,0 +1,192 @@
+/opt/java/jdk8.x86_64/bin/java -javaagent:/home/travail/idea-IC-173.4548.28/lib/idea_rt.jar=33963:/home/travail/idea-IC-173.4548.28/bin -Dfile.encoding=UTF-8 -classpath /opt/java/jdk8.x86_64/jre/lib/charsets.jar:/opt/java/jdk8.x86_64/jre/lib/deploy.jar:/opt/java/jdk8.x86_64/jre/lib/ext/cldrdata.jar:/opt/java/jdk8.x86_64/jre/lib/ext/dnsns.jar:/opt/java/jdk8.x86_64/jre/lib/ext/jaccess.jar:/opt/java/jdk8.x86_64/jre/lib/ext/jfxrt.jar:/opt/java/jdk8.x86_64/jre/lib/ext/localedata.jar:/opt/java/jdk8.x86_64/jre/lib/ext/nashorn.jar:/opt/java/jdk8.x86_64/jre/lib/ext/sunec.jar:/opt/java/jdk8.x86_64/jre/lib/ext/sunjce_provider.jar:/opt/java/jdk8.x86_64/jre/lib/ext/sunpkcs11.jar:/opt/java/jdk8.x86_64/jre/lib/ext/zipfs.jar:/opt/java/jdk8.x86_64/jre/lib/javaws.jar:/opt/java/jdk8.x86_64/jre/lib/jce.jar:/opt/java/jdk8.x86_64/jre/lib/jfr.jar:/opt/java/jdk8.x86_64/jre/lib/jfxswt.jar:/opt/java/jdk8.x86_64/jre/lib/jsse.jar:/opt/java/jdk8.x86_64/jre/lib/management-agent.jar:/opt/java/jdk8.x86_64/jre/lib/plugin.jar:/opt/java/jdk8.x86_64/jre/lib/resources.jar:/opt/java/jdk8.x86_64/jre/lib/rt.jar:/home/travail/TP2/LOG6302_TP2/WALA-hello-master/out/production/classes:/usagers/kajula/.gradle/caches/modules-2/files-2.1/com.ibm.wala/com.ibm.wala.cast.js.rhino/1.4.3/4dda899e19ada977d1db05e4403058c40ad471a3/com.ibm.wala.cast.js.rhino-1.4.3.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/com.ibm.wala/com.ibm.wala.cast.js/1.4.3/5729fa8cee5835d147e5910c3f1056ca49bbffa4/com.ibm.wala.cast.js-1.4.3.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/com.ibm.wala/com.ibm.wala.cast.java.ecj/1.4.3/c2f16b420729372529c5e00de68ed84afb10e3f8/com.ibm.wala.cast.java.ecj-1.4.3.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/com.ibm.wala/com.ibm.wala.cast.java/1.4.3/68c4105e226703fca5209a14515f9b28adfc2078/com.ibm.wala.cast.java-1.4.3.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/com.ibm.wala/com.ibm.wala.cast/1.4.3/722859137b04a72642b14a4b32fd75e0c9bed50a/com.ibm.wala.cast-1.4.3.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/com.ibm.wala/com.ibm.wala.core/1.4.3/60cd6d68dcdd9e9fb84b23717f7e61089b2fe925/com.ibm.wala.core-1.4.3.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/com.ibm.wala/com.ibm.wala.shrike/1.4.3/7db1a2333202adeb6f454e1c0642467262eb8282/com.ibm.wala.shrike-1.4.3.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/com.ibm.wala/com.ibm.wala.util/1.4.3/d6e16b869e0d7b072b74443ef3806a1845b5eee9/com.ibm.wala.util-1.4.3.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/net.htmlparser.jericho/jericho-html/3.2/b8385d9836562d75df8445db00c7e9c50459af9f/jericho-html-3.2.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/org.mozilla/rhino/1.7.6/a2ce88a3ce55249cd2f0c7d12ce7ef49c14a11d1/rhino-1.7.6.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/org.eclipse.jdt.core/3.10.0/647e19b28c106a63a14401c0f5956289792adf2f/org.eclipse.jdt.core-3.10.0.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/org.eclipse.core/org.eclipse.core.resources/3.7.100/6c56ea28b84afe7d55de02763846e76dbfb0b689/org.eclipse.core.resources-3.7.100.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/org.eclipse.core/org.eclipse.core.expressions/3.4.300/42b2139abd5638730db317a51949dac3b8d81492/org.eclipse.core.expressions-3.4.300.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/org.eclipse.core/org.eclipse.core.runtime/3.7.0/6658c235056134f7e86295e751129508802d71f2/org.eclipse.core.runtime-3.7.0.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/org.eclipse.core/org.eclipse.core.filesystem/1.3.100/37fce4f5488a21ce36021d4909acaf5687e1595e/org.eclipse.core.filesystem-1.3.100.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/org.eclipse.osgi/org.eclipse.osgi/3.7.1/2d80f93b8803250f232902c46eba850bf1f3e67f/org.eclipse.osgi-3.7.1.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/org.eclipse.core/org.eclipse.core.jobs/3.5.100/7e99e30a7f23423a250744af33009fc2fbcdf241/org.eclipse.core.jobs-3.5.100.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/org.eclipse.core/org.eclipse.core.contenttype/3.4.100/7052e115041d04410a4519a61307502fb7c138e6/org.eclipse.core.contenttype-3.4.100.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/org.eclipse.equinox/org.eclipse.equinox.registry/3.5.101/eac5aeb82732847bc7f11e2b5c934004c4c7a543/org.eclipse.equinox.registry-3.5.101.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/org.eclipse.equinox/org.eclipse.equinox.preferences/3.4.1/6770649a91266a4a17747b201723a1fea8c8a198/org.eclipse.equinox.preferences-3.4.1.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/org.eclipse.text/org.eclipse.text/3.5.101/54a442442c575e6809c18f7dfc848755a58ab955/org.eclipse.text-3.5.101.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/org.eclipse.equinox/org.eclipse.equinox.common/3.6.0/78e5d0b8516b042495660da36ce5114650f8f156/org.eclipse.equinox.common-3.6.0.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/org.eclipse.equinox/org.eclipse.equinox.app/1.3.100/e7169b33d352f5ddb6eace73f5a4d29aae3b91ec/org.eclipse.equinox.app-1.3.100.jar:/usagers/kajula/.gradle/caches/modules-2/files-2.1/org.eclipse.core/org.eclipse.core.commands/3.6.0/11c16b281bc722e9acb07a0562f0aa6e824d6215/org.eclipse.core.commands-3.6.0.jar com.ibm.wala.shrikeBT.shrikeCT.tools.ClassPrinter /home/travail/TP2/LOG6302_TP2/wordcount
+Class: main
+  Constant pool item 1: Method java/lang/Object <init> ()V
+  Constant pool item 2: String "Wala permet la repr\u00E9sentation du code dans une repr\u00E9sentation interm\u00E9diaire, comprenant un CFG intra-proc\u00E9dural ainsi que les derni\u00E8res instructions SSA de chaque bloc. Wala a \u00E9galement des interfaces permettant d'extraire d'autres graphes, tels que des CFG \u00E9tendus ou des CFG inter-proc\u00E9duraux. Il est ensuite possible de parcourir ces graphes afin de r\u00E9colter des informations dans chaque noeud.\nPour l'analyse PTFA, nous avons besoin de connaitre les instructions affectant la s\u00E9curit\u00E9, et donc de chaque instruction SSA. Pour cela, il parait plus pertinent d'utiliser un graphe \u00E9tendu, c'est \u00E0 dire avec un bloc pour chaque instruction. Ensuite, nous devrons consid\u00E9rer plusieurs contextes d'appels des m\u00E9thodes lors de l'analyse. Nous devons donc extraire un graphe inter-proc\u00E9dural et \u00E9tendu."
+  Constant pool item 3: Field main chaine Ljava/lang/String;
+  Constant pool item 4: Class main
+  Constant pool item 5: Method main <init> ()V
+  Constant pool item 6: Method main wordcount ()I
+  Constant pool item 7: Method java/lang/String length ()I
+  Constant pool item 8: Method java/lang/String charAt (I)C
+  Constant pool item 9: Class java/lang/Object
+  Constant pool item 10: Utf8 "chaine"
+  Constant pool item 11: Utf8 "Ljava/lang/String;"
+  Constant pool item 12: Utf8 "<init>"
+  Constant pool item 13: Utf8 "()V"
+  Constant pool item 14: Utf8 "Code"
+  Constant pool item 15: Utf8 "LineNumberTable"
+  Constant pool item 16: Utf8 "LocalVariableTable"
+  Constant pool item 17: Utf8 "this"
+  Constant pool item 18: Utf8 "Lmain;"
+  Constant pool item 19: Utf8 "main"
+  Constant pool item 20: Utf8 "([Ljava/lang/String;)V"
+  Constant pool item 21: Utf8 "args"
+  Constant pool item 22: Utf8 "[Ljava/lang/String;"
+  Constant pool item 23: Utf8 "wordcount"
+  Constant pool item 24: Utf8 "()I"
+  Constant pool item 25: Utf8 "c"
+  Constant pool item 26: Utf8 "C"
+  Constant pool item 27: Utf8 "indent"
+  Constant pool item 28: Utf8 "I"
+  Constant pool item 29: Utf8 "nl"
+  Constant pool item 30: Utf8 "nw"
+  Constant pool item 31: Utf8 "nc"
+  Constant pool item 32: Utf8 "inword"
+  Constant pool item 33: Utf8 "Z"
+  Constant pool item 34: Utf8 "SourceFile"
+  Constant pool item 35: Utf8 "main.java"
+  Constant pool item 36: NameAndType ()V <init>
+  Constant pool item 37: Utf8 "Wala permet la repr\u00E9sentation du code dans une repr\u00E9sentation interm\u00E9diaire, comprenant un CFG intra-proc\u00E9dural ainsi que les derni\u00E8res instructions SSA de chaque bloc. Wala a \u00E9galement des interfaces permettant d'extraire d'autres graphes, tels que des CFG \u00E9tendus ou des CFG inter-proc\u00E9duraux. Il est ensuite possible de parcourir ces graphes afin de r\u00E9colter des informations dans chaque noeud.\nPour l'analyse PTFA, nous avons besoin de connaitre les instructions affectant la s\u00E9curit\u00E9, et donc de chaque instruction SSA. Pour cela, il parait plus pertinent d'utiliser un graphe \u00E9tendu, c'est \u00E0 dire avec un bloc pour chaque instruction. Ensuite, nous devrons consid\u00E9rer plusieurs contextes d'appels des m\u00E9thodes lors de l'analyse. Nous devons donc extraire un graphe inter-proc\u00E9dural et \u00E9tendu."
+  Constant pool item 38: NameAndType Ljava/lang/String; chaine
+  Constant pool item 39: NameAndType ()I wordcount
+  Constant pool item 40: Class java/lang/String
+  Constant pool item 41: NameAndType ()I length
+  Constant pool item 42: NameAndType (I)C charAt
+  Constant pool item 43: Utf8 "java/lang/Object"
+  Constant pool item 44: Utf8 "java/lang/String"
+  Constant pool item 45: Utf8 "length"
+  Constant pool item 46: Utf8 "charAt"
+  Constant pool item 47: Utf8 "(I)C"
+  SourceFile: @675
+    file: main.java
+
+1 fields:
+chaine Ljava/lang/String; 0x10000(private)
+
+3 methods:
+<init> ()V 0x16(public)
+  Code: @4de
+    maxstack: 2
+    maxlocals: 1
+    bytecode:
+      0: LocalLoad(Ljava/lang/Object;,0) (0)
+      1: Invoke(SPECIAL,Ljava/lang/Object;,<init>,()V) (1)
+      2: LocalLoad(Ljava/lang/Object;,0) (4)
+      3: Constant(Ljava/lang/String;,"Wala permet la représentation du code dans une représentation intermédiaire, comprenant un CFG intra-procédural ainsi que les dernières instructions SSA de chaque bloc. Wala a également des interfaces permettant d'extraire d'autres graphes, tels que des CFG étendus ou des CFG inter-procéduraux. Il est ensuite possible de parcourir ces graphes afin de récolter des informations dans chaque noeud.\
+Pour l'analyse PTFA, nous avons besoin de connaitre les instructions affectant la sécurité, et donc de chaque instruction SSA. Pour cela, il parait plus pertinent d'utiliser un graphe étendu, c'est à dire avec un bloc pour chaque instruction. Ensuite, nous devrons considérer plusieurs contextes d'appels des méthodes lors de l'analyse. Nous devons donc extraire un graphe inter-procédural et étendu.") (5)
+      4: Put(Ljava/lang/String;,NONSTATIC,Lmain;,chaine) (7)
+      5: Return(V) (10)
+    exception handlers:
+    LineNumberTable: 4fb
+    LocalVariableTable: 50b
+    line number map:
+      0: 3 (4 times)
+      4: 12 (7 times)
+    local variable map:
+      0: 0:this(Lmain;) (11 times)
+main ([Ljava/lang/String;)V 0x17(public static)
+  Code: @525
+    maxstack: 2
+    maxlocals: 1
+    bytecode:
+      0: New(Lmain;,0) (0)
+      1: Dup(1,0) (3)
+      2: Invoke(SPECIAL,Lmain;,<init>,()V) (4)
+      3: Invoke(VIRTUAL,Lmain;,wordcount,()I) (7)
+      4: Pop(1) (10)
+      5: Return(V) (11)
+    exception handlers:
+    LineNumberTable: 543
+    LocalVariableTable: 553
+    line number map:
+      0: 17 (11 times)
+      11: 18
+    local variable map:
+      0: 0:args([Ljava/lang/String;) (12 times)
+wordcount ()I 0x16(public)
+  Code: @56d
+    maxstack: 2
+    maxlocals: 7
+    bytecode:
+      0: Constant(I,1) (0)
+      1: LocalStore(I,1) (1)
+      2: Constant(I,1) (2)
+      3: LocalStore(I,2) (3)
+      4: Constant(I,1) (4)
+      5: LocalStore(I,3) (5)
+      6: Constant(I,0) (6)
+      7: LocalStore(I,4) (7)
+      8: Constant(I,0) (9)
+      9: LocalStore(I,5) (10)
+      10: LocalLoad(I,5) (12)
+      11: LocalLoad(Ljava/lang/Object;,0) (14)
+      12: Get(Ljava/lang/String;,NONSTATIC,Lmain;,chaine) (15)
+      13: Invoke(VIRTUAL,Ljava/lang/String;,length,()I) (18)
+      14: ConditionalBranch(I,ge,57) (21)
+      15: LocalLoad(Ljava/lang/Object;,0) (24)
+      16: Get(Ljava/lang/String;,NONSTATIC,Lmain;,chaine) (25)
+      17: LocalLoad(I,5) (28)
+      18: Invoke(VIRTUAL,Ljava/lang/String;,charAt,(I)C) (30)
+      19: LocalStore(I,6) (33)
+      20: LocalLoad(I,3) (35)
+      21: Constant(I,1) (35)
+      22: BinaryOp(I,add) (35)
+      23: LocalStore(I,3) (35)
+      24: LocalLoad(I,6) (38)
+      25: Constant(I,10) (40)
+      26: ConditionalBranch(I,ne,31) (42)
+      27: LocalLoad(I,1) (45)
+      28: Constant(I,1) (45)
+      29: BinaryOp(I,add) (45)
+      30: LocalStore(I,1) (45)
+      31: LocalLoad(I,6) (48)
+      32: Constant(I,10) (50)
+      33: ConditionalBranch(I,eq,40) (52)
+      34: LocalLoad(I,6) (55)
+      35: Constant(I,9) (57)
+      36: ConditionalBranch(I,eq,40) (59)
+      37: LocalLoad(I,6) (62)
+      38: Constant(I,32) (64)
+      39: ConditionalBranch(I,ne,50) (66)
+      40: LocalLoad(I,4) (69)
+      41: Constant(I,0) (71)
+      42: ConditionalBranch(I,ne,52) (71)
+      43: Constant(I,1) (74)
+      44: LocalStore(I,4) (75)
+      45: LocalLoad(I,2) (77)
+      46: Constant(I,1) (77)
+      47: BinaryOp(I,add) (77)
+      48: LocalStore(I,2) (77)
+      49: Goto(52) (80)
+      50: Constant(I,0) (83)
+      51: LocalStore(I,4) (84)
+      52: LocalLoad(I,5) (86)
+      53: Constant(I,1) (86)
+      54: BinaryOp(I,add) (86)
+      55: LocalStore(I,5) (86)
+      56: Goto(10) (89)
+      57: Constant(I,0) (92)
+      58: Return(I) (93)
+    exception handlers:
+    LineNumberTable: 5dd
+    LocalVariableTable: 625
+    line number map:
+      0: 20 (2 times)
+      2: 21 (2 times)
+      4: 22 (2 times)
+      6: 23 (3 times)
+      9: 24 (15 times)
+      24: 25 (11 times)
+      35: 26 (3 times)
+      38: 27 (7 times)
+      45: 28 (3 times)
+      48: 30 (21 times)
+      69: 31 (5 times)
+      74: 32 (3 times)
+      77: 33 (6 times)
+      83: 37 (3 times)
+      86: 24 (6 times)
+      92: 41 (2 times)
+    local variable map:
+      0: 0:this(Lmain;) (2 times)
+      2: 0:this(Lmain;) 1:nl(I) (2 times)
+      4: 0:this(Lmain;) 1:nl(I) 2:nw(I) (2 times)
+      6: 0:this(Lmain;) 1:nl(I) 2:nw(I) 3:nc(I) (3 times)
+      9: 0:this(Lmain;) 1:nl(I) 2:nw(I) 3:nc(I) 4:inword(Z) (3 times)
+      12: 0:this(Lmain;) 1:nl(I) 2:nw(I) 3:nc(I) 4:inword(Z) 5:indent(I) (23 times)
+      35: 0:this(Lmain;) 1:nl(I) 2:nw(I) 3:nc(I) 4:inword(Z) 5:indent(I) 6:c(C) (51 times)
+      86: 0:this(Lmain;) 1:nl(I) 2:nw(I) 3:nc(I) 4:inword(Z) 5:indent(I) (6 times)
+      92: 0:this(Lmain;) 1:nl(I) 2:nw(I) 3:nc(I) 4:inword(Z) (2 times)
+
+
+Process finished with exit code 0
